@@ -9,8 +9,8 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <Image 
-            src="https://images.unsplash.com/photo-1654922207993-2952fec328ae?q=80&w=2940&auto=format&fit=crop" 
+          <Image
+            src="https://images.unsplash.com/photo-1654922207993-2952fec328ae?q=80&w=2940&auto=format&fit=crop"
             alt="Chef Salang cooking traditional Naga food"
             fill
             priority
@@ -19,15 +19,16 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-80" />
         </div>
-        
+
         <div className="container-custom relative z-10 text-center">
-          <h1 className="heading-xl mb-4 text-white">
-            <span className="block font-light">Chef</span>
-            <span className="text-primary">SALANG YANGER</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-white mt-6 max-w-2xl mx-auto">
-            Celebrating Naga Cuisine | Winner of Naga Chef Season 3
+          <img src="./Chef Salang W.png" alt="" />
+          <p className="text-xl md:text-6xl text-white mt-6 max-w-3xl mx-auto">
+            Winner of Naga Chef Season 3
           </p>
+          <h1 className="text-3xl md:text-7xl font-bold text-primary drop-shadow-lg mt-6">
+            Celebrating Naga Cuisine
+          </h1>
+
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link href="/about" className="btn-primary">
               Discover My Journey
@@ -38,7 +39,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Short Bio Section */}
       <section className="section-padding bg-card">
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -51,20 +52,20 @@ export default function HomePage() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          
+
           <div>
             <h2 className="heading-lg mb-6">
               <span className="text-primary">Award-Winning</span> Naga Culinary Master
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Chef Salang Yanger brings the rich flavors of Nagaland to life through his innovative 
-              culinary techniques while respecting traditional methods. With over a decade of 
-              experience and recognition, Chef Salang has established himself as a pioneer in 
+              Chef Salang Yanger brings the rich flavors of Nagaland to life through his innovative
+              culinary techniques while respecting traditional methods. With over a decade of
+              experience and recognition, Chef Salang has established himself as a pioneer in
               elevating Naga cuisine to international standards.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              From winning Naga Chef Season 3 to showcasing his talents at the prestigious 
-              Hornbill Festival in 2015, Chef Salang continues to push boundaries while preserving 
+              From winning Naga Chef Season 3 to showcasing his talents at the prestigious
+              Hornbill Festival in 2015, Chef Salang continues to push boundaries while preserving
               the authentic essence of Naga food heritage.
             </p>
             <Link href="/about" className="btn-primary">
@@ -73,58 +74,58 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Highlight Cards */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <h2 className="heading-lg text-center mb-16">
             Explore <span className="text-primary">Chef Salang's</span> World
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Signature Dishes */}
-            <Link 
-              href="/gallery" 
+            <Link
+              href="/gallery"
               className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <UtensilsCrossed className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Signature Dishes</h3>
               <p className="text-muted-foreground">Exquisite Naga creations crafted with passion</p>
             </Link>
-            
+
             {/* Catering */}
-            <Link 
-              href="/catering" 
+            <Link
+              href="/catering"
               className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <ChefHat className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Catering</h3>
               <p className="text-muted-foreground">Bringing authentic Naga flavors to your events</p>
             </Link>
-            
+
             {/* Products */}
-            <Link 
-              href="/products" 
+            <Link
+              href="/products"
               className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <Gift className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Products</h3>
               <p className="text-muted-foreground">Artisanal Naga products for your kitchen</p>
             </Link>
-            
+
             {/* Videos */}
-            <Link 
-              href="/videos" 
+            <Link
+              href="/videos"
               className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <PlayCircle className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Videos</h3>
               <p className="text-muted-foreground">Watch Chef Salang in action</p>
             </Link>
-            
+
             {/* Contact */}
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <PhoneCall className="w-12 h-12 text-primary mb-4" />
@@ -134,15 +135,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Featured Dish */}
       <section className="section-padding bg-card">
         <div className="container-custom">
           <div className="relative rounded-xl overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
-              <Image 
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2940&auto=format&fit=crop" 
+              <Image
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2940&auto=format&fit=crop"
                 alt="Featured dish"
                 fill
                 className="object-cover"
@@ -150,13 +151,13 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-90" />
             </div>
-            
+
             {/* Content */}
             <div className="relative p-12 md:p-16 lg:p-24 max-w-3xl">
               <h3 className="text-secondary text-xl mb-2">Featured Dish</h3>
               <h2 className="heading-lg mb-6">Traditional Smoked Pork with Axone</h2>
               <p className="text-lg text-white mb-8">
-                A quintessential Naga delicacy bringing together the robust flavors of 
+                A quintessential Naga delicacy bringing together the robust flavors of
                 smoked pork complemented by the distinct umami notes of fermented soybean (Axone).
                 This signature dish embodies Chef Salang's dedication to authentic Naga cuisine.
               </p>
@@ -167,7 +168,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
@@ -177,10 +178,10 @@ export default function HomePage() {
           <p className="text-xl text-white mb-10 max-w-2xl mx-auto">
             Let Chef Salang create a memorable culinary experience for your next event.
           </p>
-          <a 
-            href="https://wa.me/1234567890" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"
           >
             Book Chef Salang
