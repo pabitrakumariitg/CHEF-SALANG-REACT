@@ -1,10 +1,9 @@
 import "@/styles/globals.css";
 import React from "react";
-
-import { GeistSans } from "geist/font/sans";
-import { type Metadata } from "next";
-
-import { DevtoolsProvider } from 'creatr-devtools'
+import { Metadata } from "next";
+import { DevtoolsProvider } from 'creatr-devtools';
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const viewport = {
   width: "device-width",
@@ -14,15 +13,14 @@ export const viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Creatr",
-    template: "%s | Creatr",
+    default: "Chef Salang Yanger | Award-Winning Naga Cuisine",
+    template: "%s | Chef Salang Yanger",
   },
-  description: "A modern web application built with Next.js and TypeScript",
-  applicationName: "Creatr",
-  keywords: ["next.js", "react", "typescript", "web application"],
-  authors: [{ name: "Creatr Team" }],
-  creator: "Creatr Team",
-  publisher: "Creatr Team",
+  description: "Chef Salang Yanger is an award-winning chef specializing in authentic Naga cuisine. Winner of Naga Chef Season 3 and featured at Hornbill Festival 2015.",
+  keywords: ["Chef Salang Yanger", "Naga cuisine", "Naga food", "Naga Chef", "award-winning chef", "catering", "traditional Naga food", "Hornbill Festival"],
+  authors: [{ name: "Chef Salang Yanger" }],
+  creator: "Chef Salang Yanger",
+  publisher: "KAKI",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Creatr",
+    title: "Chef Salang Yanger",
   },
   formatDetection: {
     telephone: false,
@@ -48,9 +46,15 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
-        <DevtoolsProvider>{children}</DevtoolsProvider>
+    <html lang="en" className="scroll-smooth">
+      <body className="min-h-screen flex flex-col">
+        <DevtoolsProvider>
+          <Navbar />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </DevtoolsProvider>
       </body>
     </html>
   );
