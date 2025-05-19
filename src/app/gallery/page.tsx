@@ -5,10 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 
-export const metadata = {
-  title: 'Food Gallery | Chef Salang Yanger',
-  description: 'Explore a visual feast of authentic Naga cuisine crafted by award-winning Chef Salang Yanger. View appetizers, main dishes, and desserts.',
-};
+// Metadata moved to layout or parent component
 
 // Gallery images data
 const galleryImages = {

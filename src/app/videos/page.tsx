@@ -19,7 +19,7 @@ export default function VideosPage() {
     {
       id: 'v1',
       title: 'Traditional Naga Smoked Pork Recipe',
-      description: 'Learn how to prepare authentic smoked pork with Chef Salang's special techniques.',
+      description: 'Learn how to prepare authentic smoked pork with Chef Salang\'s special techniques.',
       thumbnail: 'https://images.unsplash.com/photo-1668236543090-82475c010f12?q=80&w=2940&auto=format&fit=crop',
       url: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
       duration: '12:45',
@@ -94,7 +94,7 @@ export default function VideosPage() {
     },
     {
       id: 'v9',
-      title: 'Product Showcase: Chef Salang's Sausages',
+      title: 'Product Showcase: Chef Salang\'s Sausages',
       description: 'Behind the scenes look at how Chef Salang creates his signature sausages.',
       thumbnail: 'https://images.unsplash.com/photo-1615937691194-97dbd3f3dc29?q=80&w=2787&auto=format&fit=crop',
       url: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',

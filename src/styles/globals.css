@@ -86,7 +86,7 @@
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary hover:shadow-opacity-10 hover:translate-y-[-5px];
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary hover:bg-opacity-10 hover:translate-y-[-5px];
   }
 }
 
