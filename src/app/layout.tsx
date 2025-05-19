@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import React from "react";
 import { Metadata } from "next";
-import { DevtoolsProvider } from 'creatr-devtools';
+//import { DevtoolsProvider } from 'creatr-devtools';
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
@@ -48,13 +48,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen flex flex-col">
-        <DevtoolsProvider>
+        
           <Navbar />
           <main className="flex-1">
             {children}
           </main>
           <Footer />
-        </DevtoolsProvider>
+        
       </body>
     </html>
   );
