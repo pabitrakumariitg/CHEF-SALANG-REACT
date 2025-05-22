@@ -11,7 +11,7 @@ const products = [
     id: 1,
     name: "Traditional Naga Sausages",
     description: "Handcrafted smoked pork sausages made with authentic Naga spices and herbs. Perfect for grilling or adding to stews.",
-    image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=2960&auto=format&fit=crop",
+    image: "/sausage.jpg",
     price: "₹450 / pack",
     category: "Meats"
   },
@@ -19,7 +19,7 @@ const products = [
     id: 2,
     name: "Axone (Fermented Soybean)",
     description: "Traditional fermented soybean paste, a Naga kitchen essential. Use as a base for curries or as a flavorful condiment.",
-    image: "https://images.unsplash.com/photo-1620057657132-4dbeebfea8cb?q=80&w=2788&auto=format&fit=crop",
+    image: "/fermented-soyabeans.jpg",
     price: "₹350 / jar",
     category: "Fermented Goods"
   },
@@ -27,7 +27,7 @@ const products = [
     id: 3,
     name: "Raja Mircha Hot Sauce",
     description: "Chef Salang's signature hot sauce made with the famous Naga ghost peppers. Adds authentic heat to any dish.",
-    image: "https://images.unsplash.com/photo-1620636670545-8436cc7241dc?q=80&w=2787&auto=format&fit=crop",
+    image: "/hot-sauce.jpg",
     price: "₹300 / bottle",
     category: "Condiments"
   },
@@ -35,7 +35,7 @@ const products = [
     id: 4,
     name: "Bamboo Shoot Pickle",
     description: "Traditional Naga style pickled bamboo shoots with aromatic spices. A perfect accompaniment to rice dishes.",
-    image: "https://images.unsplash.com/photo-1584535058895-0b4c0031abe1?q=80&w=2835&auto=format&fit=crop",
+    image: "/Bamboo-shoot-pickle.jpg",
     price: "₹380 / jar",
     category: "Pickles"
   },
@@ -43,7 +43,7 @@ const products = [
     id: 5,
     name: "Wild Forest Honey",
     description: "Pure, raw honey harvested from Nagaland's forests. Unprocessed with all natural health benefits intact.",
-    image: "https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=2940&auto=format&fit=crop",
+    image: "/forest-honey.jpg",
     price: "₹650 / bottle",
     category: "Sweets"
   },
@@ -51,25 +51,9 @@ const products = [
     id: 6,
     name: "Naga Herb & Spice Blend",
     description: "Chef Salang's proprietary blend of indigenous herbs and spices. Perfect for marinades and seasonings.",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2940&auto=format&fit=crop",
+    image: "/herb-and-spice.jpg",
     price: "₹400 / pack",
     category: "Spices"
-  },
-  {
-    id: 7,
-    name: "Smoked Naga Pork Jerky",
-    description: "Traditional air-dried and smoked pork slices seasoned with authentic Naga spices. Perfect protein-rich snack.",
-    image: "https://images.unsplash.com/photo-1620662736427-b8a198f52a4d?q=80&w=2787&auto=format&fit=crop",
-    price: "₹550 / pack",
-    category: "Meats"
-  },
-  {
-    id: 8,
-    name: "Fermented Bamboo Shoot",
-    description: "Traditional fermented bamboo shoots, ready to use in authentic Naga recipes or as a side dish.",
-    image: "https://images.unsplash.com/photo-1616166358812-48e819a0739a?q=80&w=2864&auto=format&fit=crop",
-    price: "₹320 / pack",
-    category: "Fermented Goods"
   }
 ];
 
@@ -83,18 +67,18 @@ export default function ProductsPage() {
             Artisanal <span className="text-primary">Products</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover Chef Salang's exclusive range of authentic Naga food products, 
+            Discover Chef Salang's exclusive range of authentic Naga food products,
             handcrafted using traditional methods and premium ingredients
           </p>
         </div>
       </section>
-      
+
       {/* Products Section */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
-              <div 
+              <div
                 key={product.id}
                 className="bg-card rounded-lg overflow-hidden card-hover"
               >
@@ -115,7 +99,7 @@ export default function ProductsPage() {
                   <p className="text-muted-foreground mb-4">{product.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-medium">{product.price}</span>
-                    <a 
+                    <a
                       href={`https://wa.me/1234567890?text=I'm interested in purchasing ${product.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -130,9 +114,9 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Instagram Shop Section */}
-      <section className="section-padding bg-card">
+      <section className="section-padding bg-card" >
         <div className="container-custom text-center">
           <div className="flex items-center justify-center mb-6">
             <Instagram className="w-8 h-8 text-primary mr-3" />
@@ -142,9 +126,9 @@ export default function ProductsPage() {
             Follow Chef Salang on Instagram to browse and shop our complete product collection.
             Direct message us for orders and inquiries.
           </p>
-          <a 
-            href="https://instagram.com" 
-            target="_blank" 
+          <a
+            href="https://instagram.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center"
           >
@@ -153,7 +137,7 @@ export default function ProductsPage() {
           </a>
         </div>
       </section>
-      
+
       {/* Wholesale Inquiry */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
@@ -163,10 +147,10 @@ export default function ProductsPage() {
           <p className="text-xl text-white opacity-90 mb-10 max-w-2xl mx-auto">
             Chef Salang's products are available for wholesale purchase for restaurants, specialty stores, and retailers.
           </p>
-          <a 
-            href="https://wa.me/1234567890?text=I'm interested in wholesale opportunities for Chef Salang's products" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://wa.me/1234567890?text=I'm interested in wholesale opportunities for Chef Salang's products"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"
           >
             Contact for Wholesale Inquiries
@@ -174,30 +158,30 @@ export default function ProductsPage() {
           </a>
         </div>
       </section>
-      
+
       {/* Product Philosophy */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=2787&auto=format&fit=crop"
+                src="/detailing.jpg"
                 alt="Chef Salang preparing products"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            
+
             <div>
               <h2 className="heading-lg mb-6">Our Product <span className="text-primary">Philosophy</span></h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Every product in Chef Salang's collection is made with the same care and attention to detail 
-                that characterizes his cooking. We source ingredients locally from trusted farmers and producers 
+                Every product in Chef Salang's collection is made with the same care and attention to detail
+                that characterizes his cooking. We source ingredients locally from trusted farmers and producers
                 in Nagaland to ensure authenticity and support local communities.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Our production methods honor traditional techniques passed down through generations, while incorporating 
+                Our production methods honor traditional techniques passed down through generations, while incorporating
                 modern food safety standards. Each batch is personally approved by Chef Salang to maintain quality and consistency.
               </p>
               <p className="text-lg text-muted-foreground">

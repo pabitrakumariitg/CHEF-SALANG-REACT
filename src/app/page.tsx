@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
 
         <div className="container-custom relative z-10 text-center">
-          <img src="./Chef Salang W.png" alt="" />
+          <img src="/Chef Salang W.png" alt="Chef Salang Yanger Logo" />
           <p className="text-xl md:text-6xl text-white mt-6 max-w-3xl mx-auto">
             Winner of Naga Chef Season 3
           </p>

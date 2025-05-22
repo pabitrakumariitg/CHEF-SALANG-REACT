@@ -12,25 +12,20 @@ const galleryImages = {
   appetizers: [
     {
       id: "app-1",
-      src: "https://images.unsplash.com/photo-1541014741259-de529411b96a?q=80&w=2940&auto=format&fit=crop",
+      src: "/smoked-pork.jpg",
       alt: "Smoked pork skewers with chili sauce",
       title: "Smoked Pork Skewers"
     },
     {
       id: "app-2",
-      src: "https://images.unsplash.com/photo-1625938145744-331403f73a6e?q=80&w=2940&auto=format&fit=crop",
+      src: "/bamboo-shoot.jpg",
       alt: "Bamboo shoot fritters",
       title: "Bamboo Shoot Fritters"
     },
+   
     {
       id: "app-3",
-      src: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=2940&auto=format&fit=crop",
-      alt: "Axone hummus with crispy rice crackers",
-      title: "Axone Hummus"
-    },
-    {
-      id: "app-4",
-      src: "https://images.unsplash.com/photo-1633383718081-22ac93e3db65?q=80&w=2787&auto=format&fit=crop",
+      src: "/mushroom-pakora.jpg",
       alt: "Wild mushroom pakoras",
       title: "Wild Mushroom Pakoras"
     },
@@ -38,31 +33,31 @@ const galleryImages = {
   mains: [
     {
       id: "main-1",
-      src: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=2940&auto=format&fit=crop",
+      src: "/pork-curry.jpg",
       alt: "Naga pork curry with bamboo shoots",
       title: "Naga Pork Curry"
     },
     {
       id: "main-2",
-      src: "https://images.unsplash.com/photo-1614145121029-83a9f7b68bf4?q=80&w=2787&auto=format&fit=crop",
+      src: "/smoked-fish.jpg",
       alt: "Smoked fish with wild herb sauce",
       title: "Smoked Fish"
     },
     {
       id: "main-3",
-      src: "https://images.unsplash.com/photo-1574484284002-952d92456975?q=80&w=2787&auto=format&fit=crop",
+      src: "/bamboo-shoot-stew.jpg",
       alt: "Bamboo shoot and wild green stew",
       title: "Bamboo Shoot Stew"
     },
     {
       id: "main-4",
-      src: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?q=80&w=2835&auto=format&fit=crop",
+      src: "/axone-chicken.jpg",
       alt: "Axone chicken",
       title: "Axone Chicken"
     },
     {
       id: "main-5",
-      src: "https://images.unsplash.com/photo-1598514983318-2f64f8f4f856?q=80&w=2940&auto=format&fit=crop",
+      src: "/fish-curry.jpg",
       alt: "Raja mircha fish curry",
       title: "Raja Mircha Fish Curry"
     },
@@ -76,19 +71,19 @@ const galleryImages = {
   desserts: [
     {
       id: "dessert-1",
-      src: "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=2864&auto=format&fit=crop",
+      src: "/black-rice-pudding.jpg",
       alt: "Black rice pudding with seasonal fruits",
       title: "Black Rice Pudding"
     },
     {
       id: "dessert-2",
-      src: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=2787&auto=format&fit=crop",
+      src: "/pineapple-ginger.jpg",
       alt: "Pineapple and ginger sorbet",
       title: "Pineapple & Ginger Sorbet"
     },
     {
       id: "dessert-3",
-      src: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=2787&auto=format&fit=crop",
+      src: "/banana-fritters.jpg",
       alt: "Cardamom infused banana fritters",
       title: "Banana Fritters"
     },
@@ -116,12 +111,22 @@ export default function GalleryPage() {
   return (
     <div className="pt-24">
       {/* Hero Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom text-center">
-          <h1 className="heading-xl mb-6">
+      <section className="section-padding relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.unsplash.com/photo-1541014741259-de529411b96a?q=80&w=2940&auto=format&fit=crop"
+            alt="Gallery background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-60" />
+        </div>
+        <div className="container-custom text-center relative z-10">
+          <h1 className="heading-xl mb-6 text-white">
             Food <span className="text-primary">Gallery</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
             A visual feast of authentic Naga cuisine crafted with passion and expertise by Chef Salang Yanger
           </p>
         </div>
