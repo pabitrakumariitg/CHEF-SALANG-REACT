@@ -449,7 +449,7 @@ export default function CateringPage() {
       <section className="section-padding bg-card" style={{
         backgroundImage: "url('/catering-process.jpg')", backgroundSize: "cover",
         backgroundPosition: "center",
-        opacity:0.7
+        opacity: 0.9
       }}>
         <div className="container-custom">
           <h2 className="heading-lg text-center mb-16">Our Catering <span className="text-primary">Process</span></h2>
@@ -466,7 +466,7 @@ export default function CateringPage() {
                   We begin with a detailed discussion about your event, preferences, dietary requirements, and vision.
                 </p>
               </div>
-              <div className="hidden lg:block absolute top-1/2 right-0 h-1 w-12 bg-primary transform translate-x-6"></div>
+
             </div>
 
             {/* Step 2 */}
@@ -480,7 +480,7 @@ export default function CateringPage() {
                   Chef Salang personally designs a customized menu based on your requirements and seasonal availability.
                 </p>
               </div>
-              <div className="hidden lg:block absolute top-1/2 right-0 h-1 w-12 bg-primary transform translate-x-6"></div>
+
             </div>
 
             {/* Step 3 */}
@@ -494,7 +494,7 @@ export default function CateringPage() {
                   Experience a sample of your selected dishes to ensure they meet your expectations before finalizing.
                 </p>
               </div>
-              <div className="hidden lg:block absolute top-1/2 right-0 h-1 w-12 bg-primary transform translate-x-6"></div>
+
             </div>
 
             {/* Step 4 */}
