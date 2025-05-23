@@ -57,12 +57,12 @@ export default function ContactPage() {
                       For the quickest response, reach out via WhatsApp
                     </p>
                     <a 
-                      href="https://wa.me/1234567890" 
+                      href="https://wa.me/+918794854520" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-primary font-medium hover:underline"
                     >
-                      +1 234 567 890
+                      +918794854520
                     </a>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                 
                 <div className="flex flex-col space-y-4">
                   <a 
-                    href="https://instagram.com" 
+                    href="https://www.instagram.com/salangyanger/?igsh=a3VkMzM4dW1pdHRj#" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center p-3 bg-card rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all"
@@ -274,7 +274,7 @@ export default function ContactPage() {
             we're excited to hear from you.
           </p>
           <a 
-            href="https://wa.me/1234567890" 
+            href="https://wa.me/+918794854520" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-secondary"

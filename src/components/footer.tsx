@@ -23,7 +23,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <motion.a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/salangyanger/?igsh=a3VkMzM4dW1pdHRj#" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -96,7 +96,7 @@ export function Footer() {
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-primary" />
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/+918794854520" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"

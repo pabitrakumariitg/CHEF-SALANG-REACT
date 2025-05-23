@@ -523,7 +523,7 @@ export default function CateringPage() {
             Contact us today to discuss your requirements and check availability.
           </p>
           <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/+918794854520"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"

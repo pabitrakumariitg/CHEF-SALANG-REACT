@@ -100,7 +100,7 @@ export default function ProductsPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-medium">{product.price}</span>
                     <a
-                      href={`https://wa.me/1234567890?text=I'm interested in purchasing ${product.name}`}
+                      href={`https://wa.me/+918794854520?text=I'm interested in purchasing ${product.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary hover:bg-opacity-80 transition-all"
@@ -127,7 +127,7 @@ export default function ProductsPage() {
             Direct message us for orders and inquiries.
           </p>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/salangyanger/?igsh=a3VkMzM4dW1pdHRj#"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center"
@@ -148,7 +148,7 @@ export default function ProductsPage() {
             Chef Salang's products are available for wholesale purchase for restaurants, specialty stores, and retailers.
           </p>
           <a
-            href="https://wa.me/1234567890?text=I'm interested in wholesale opportunities for Chef Salang's products"
+            href="https://wa.me/+918794854520?text=I'm interested in wholesale opportunities for Chef Salang's products"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"

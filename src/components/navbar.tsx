@@ -39,13 +39,15 @@ export function Navbar() {
 			)}
 		>
 			<div className="container-custom flex items-center justify-between">
-				{/* Logo */}
-				<Link href="/" className="flex items-center">
-					<span className="text-xl font-bold">
-						<span className="text-primary">CHEF</span>
-						<span className="text-white">SALANG</span>
-					</span>
-				</Link>
+				<div className="flex items-center">
+					<Link href="/">
+						<img
+							src="/Chef Salang W.png"
+							alt="Logo"
+							className="h-10 w-auto lg:h-12 object-contain"
+						/>
+					</Link>
+				</div>
 
 				{/* Desktop Navigation */}
 				<nav className="hidden lg:flex items-center space-x-8">
@@ -63,7 +65,7 @@ export function Navbar() {
 				{/* Social Icons - Desktop */}
 				<div className="hidden lg:flex items-center space-x-4">
 					<a
-						href="https://instagram.com"
+						href="https://www.instagram.com/salangyanger/?igsh=a3VkMzM4dW1pdHRj#"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Instagram"
@@ -128,7 +130,7 @@ export function Navbar() {
 								{/* Social Icons - Mobile */}
 								<div className="flex space-x-6 mt-auto">
 									<a
-										href="https://instagram.com"
+										href="https://www.instagram.com/salangyanger/?igsh=a3VkMzM4dW1pdHRj#"
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label="Instagram"

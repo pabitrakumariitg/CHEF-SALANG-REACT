@@ -10,7 +10,7 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1654922207993-2952fec328ae?q=80&w=2940&auto=format&fit=crop"
+            src="/SBL.DNG"
             alt="Chef Salang cooking traditional Naga food"
             fill
             priority
@@ -21,10 +21,11 @@ export default function HomePage() {
         </div>
 
         <div className="container-custom relative z-10 text-center">
-          <img src="/Chef Salang W.png" alt="Chef Salang Yanger Logo" />
+
           <p className="text-xl md:text-6xl text-white mt-6 max-w-3xl mx-auto">
-            Winner of Naga Chef Season 3
+            Winner of Naga Chef <span className="text-secondary">Season 3</span>
           </p>
+
           <h1 className="text-3xl md:text-7xl font-bold text-primary drop-shadow-lg mt-6">
             Celebrating Naga Cuisine
           </h1>
@@ -45,7 +46,7 @@ export default function HomePage() {
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
             <Image
-              src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2940&auto=format&fit=crop"
+              src="/images/ChefSalangYanger.jpg"
               alt="Chef Salang Yanger portrait"
               fill
               className="object-cover"
@@ -139,28 +140,22 @@ export default function HomePage() {
       {/* Featured Dish */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="relative rounded-xl overflow-hidden">
-            {/* Background Image */}
-            <div className="absolute inset-0">
+          <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
               <Image
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2940&auto=format&fit=crop"
-                alt="Featured dish"
+                src="/images/FEATURED_DISH.jpg"
+                alt="Lang Lang Chicken prepared by Chef Salang Yanger"
                 fill
                 className="object-cover"
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-90" />
             </div>
 
             {/* Content */}
-            <div className="relative p-12 md:p-16 lg:p-24 max-w-3xl">
-              <h3 className="text-secondary text-xl mb-2">Featured Dish</h3>
-              <h2 className="heading-lg mb-6">Traditional Smoked Pork with Axone</h2>
-              <p className="text-lg text-white mb-8">
-                A quintessential Naga delicacy bringing together the robust flavors of
-                smoked pork complemented by the distinct umami notes of fermented soybean (Axone).
-                This signature dish embodies Chef Salang's dedication to authentic Naga cuisine.
-              </p>
+            <div className="relative p-12 md:p-16 lg:p-24 max-w-13xl">
+              <h3 className="text-secondary text-4xl mb-2">Featured Dish</h3>
+              <p className="mb-6 italic font-[cursive]">~ Potroast Chicken in a sweet chili sauce garnished with local mustard leaves and edible herbs and flowers</p>
+
               <Link href="/gallery" className="btn-secondary">
                 Explore Gallery
               </Link>
@@ -168,6 +163,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="section-padding bg-primary">
@@ -179,7 +175,7 @@ export default function HomePage() {
             Let Chef Salang create a memorable culinary experience for your next event.
           </p>
           <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/+918794854520"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"

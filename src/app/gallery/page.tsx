@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 // Metadata moved to layout or parent component
 
@@ -12,98 +14,144 @@ const galleryImages = {
   appetizers: [
     {
       id: "app-1",
-      src: "/smoked-pork.jpg",
-      alt: "Smoked pork skewers with chili sauce",
-      title: "Smoked Pork Skewers"
+      src: "/images/Sushi.jpg",
+      alt: "Japanese sushi rolls",
+      title: "Sushi"
     },
     {
       id: "app-2",
-      src: "/bamboo-shoot.jpg",
-      alt: "Bamboo shoot fritters",
-      title: "Bamboo Shoot Fritters"
+      src: "/images/Salmon_sushi.jpg",
+      alt: "Fresh salmon sushi",
+      title: "Salmon Sushi"
     },
-   
     {
       id: "app-3",
-      src: "/mushroom-pakora.jpg",
-      alt: "Wild mushroom pakoras",
-      title: "Wild Mushroom Pakoras"
+      src: "/images/Bacon_Roll.jpg",
+      alt: "Crispy bacon rolls with dipping sauce",
+      title: "Bacon Roll"
     },
+    {
+      id: "app-4",
+      src: "/images/Chicken_kimbap_.jpg",
+      alt: "Korean-style chicken kimbap rolls",
+      title: "Chicken Kimbap"
+    },
+    {
+      id: "app-5",
+      src: "/images/Tempura_prawns.jpg",
+      alt: "Japanese tempura prawns with dipping sauce",
+      title: "Tempura Prawns"
+    },
+    {
+      id: "app-6",
+      src: "/images/Rose_dumplings_.jpg",
+      alt: "Artistic rose-shaped dumplings",
+      title: "Rose Dumplings"
+    }
   ],
   mains: [
     {
       id: "main-1",
-      src: "/pork-curry.jpg",
-      alt: "Naga pork curry with bamboo shoots",
-      title: "Naga Pork Curry"
+      src: "/images/Pork_roast.jpg",
+      alt: "Roasted pork with herbs and vegetables",
+      title: "Pork Roast"
     },
     {
       id: "main-2",
-      src: "/smoked-fish.jpg",
-      alt: "Smoked fish with wild herb sauce",
-      title: "Smoked Fish"
+      src: "/images/fried-fish.jpg",
+      alt: "Whole fried fish with crispy skin",
+      title: "Crispy Fried Whole Fish"
     },
     {
       id: "main-3",
-      src: "/bamboo-shoot-stew.jpg",
-      alt: "Bamboo shoot and wild green stew",
-      title: "Bamboo Shoot Stew"
+      src: "/images/BBQ PORK.jpg",
+      alt: "Grilled BBQ pork with smoky glaze",
+      title: "Barbeque Pork"
     },
     {
       id: "main-4",
-      src: "/axone-chicken.jpg",
-      alt: "Axone chicken",
-      title: "Axone Chicken"
+      src: "/images/Chicken BBQ .jpg",
+      alt: "Grilled barbeque chicken",
+      title: "Barbeque Chicken"
     },
     {
       id: "main-5",
-      src: "/fish-curry.jpg",
-      alt: "Raja mircha fish curry",
-      title: "Raja Mircha Fish Curry"
+      src: "/images/Chicken_&_Fish_Roast.jpg",
+      alt: "Roasted chicken and fish combo",
+      title: "Chicken & Fish Roast"
     },
     {
       id: "main-6",
-      src: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=2893&auto=format&fit=crop",
-      alt: "Wild vegetable rice",
-      title: "Wild Vegetable Rice"
-    },
-  ],
-  desserts: [
-    {
-      id: "dessert-1",
-      src: "/black-rice-pudding.jpg",
-      alt: "Black rice pudding with seasonal fruits",
-      title: "Black Rice Pudding"
+      src: "/images/Chicken_Roast.jpg",
+      alt: "Whole roasted chicken with golden skin",
+      title: "Chicken Roast"
     },
     {
-      id: "dessert-2",
-      src: "/pineapple-ginger.jpg",
-      alt: "Pineapple and ginger sorbet",
-      title: "Pineapple & Ginger Sorbet"
+      id: "main-7",
+      src: "/images/Crispy pork.jpg",
+      alt: "Crispy fried pork slices",
+      title: "Crispy Pork"
     },
     {
-      id: "dessert-3",
-      src: "/banana-fritters.jpg",
-      alt: "Cardamom infused banana fritters",
-      title: "Banana Fritters"
+      id: "main-8",
+      src: "/images/SpicyBeefLiver.png",
+      alt: "Spicy Beef Liver Roast",
+      title: "Spicy Beef Liver "
+    }
+  ], fruit_carvings: [
+    {
+      id: "carv-1",
+      src: "/images/IMG_3197.jpg",
+      alt: "Intricate lotus pattern carved into a green melon",
+      title: "Green Melon Lotus Carving"
     },
+    {
+      id: "carv-2",
+      src: "/images/IMG_3193.jpg",
+      alt: "Detailed flower carving with red-tipped petals and green leaves on a white melon",
+      title: "Floral Melon Bloom"
+    }
+  ]
+  , food_hampers: [
+    {
+      id: "hamp-1",
+      src: "/images/Food hamper.jpg",
+      alt: "Gourmet food hamper with smoked sausages, shrimps, roasted potatoes, and salad",
+      title: "Gourmet Meat & Shrimp Hamper"
+    },
+    {
+      id: "hamp-2",
+      src: "/images/Food hampers.png",
+      alt: "Platter of grilled sausages and prawns served on a bed of lettuce",
+      title: "Grilled Sausage & Prawn Platter"
+    },
+    {
+      id: "hamp-3",
+      src: "/images/Food_hamper.jpg",
+      alt: "Whole fried fish with potato wedges and lemon slices",
+      title: "Crispy Fried Fish with Wedges"
+    }
+
+
   ]
 };
+
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState('appetizers');
   const [selectedImage, setSelectedImage] = useState(null);
-  
+
   const categories = [
     { id: 'appetizers', label: 'Appetizers' },
     { id: 'mains', label: 'Main Courses' },
-    { id: 'desserts', label: 'Desserts' },
+    { id: 'fruit_carvings', label: 'Fruit Carvings' },
+    { id: 'food_hampers', label: 'Food Hampers' },
   ];
-  
+
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
-  
+
   const closeModal = () => {
     setSelectedImage(null);
   };
@@ -131,7 +179,40 @@ export default function GalleryPage() {
           </p>
         </div>
       </section>
-      
+      {/* Signature Dish */}
+      <section className="section-padding bg-card">
+        <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
+            <Image
+              src="/images/Lang Lang chicken during Naga Chef.jpg"
+              alt="Lang Lang Chicken prepared by Chef Salang Yanger"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+
+          <div>
+            <h1 className="text-40xl heading-lg  ">
+              <span className="text-primary">Lang Lang </span>Chicken
+            </h1>
+            <p className="  italic font-[cursive] text-secondary text-center text-muted-foreground">
+              - Signature Dish Of Chef Salang Yanger
+            </p>
+
+            <p className="text-lg text-muted-foreground mb-6">
+              A bold reinterpretation of a traditional Naga delicacy, Chef Salang Yanger's <strong>Lang Lang Chicken</strong> combines smoky flavors of indigenous spices, bamboo shoot, and fresh herbs with a slow-roasted preparation method that highlights the earthy depth of Naga cuisine.
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              This signature dish, which earned acclaim during his championship run in <strong>Naga Chef Season 3</strong>, is a celebration of cultural authenticity and modern presentation. It brings together the community’s culinary wisdom with Chef Salang’s flair for innovation.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              Often served with fermented soybean chutney and sticky rice, Lang Lang Chicken is not just a dish—it’s an experience that connects tradition with today’s gourmet expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="section-padding bg-background">
         <div className="container-custom">
@@ -141,17 +222,16 @@ export default function GalleryPage() {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-3 rounded-md font-medium transition-all ${
-                  activeCategory === category.id
-                    ? 'bg-primary text-white'
-                    : 'bg-card hover:bg-primary hover:bg-opacity-10'
-                }`}
+                className={`px-6 py-3 rounded-md font-medium transition-all ${activeCategory === category.id
+                  ? 'bg-primary text-white'
+                  : 'bg-card hover:bg-primary hover:bg-opacity-10'
+                  }`}
               >
                 {category.label}
               </button>
             ))}
           </div>
-          
+
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages[activeCategory].map((image) => (
@@ -181,7 +261,7 @@ export default function GalleryPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Lightbox Modal */}
       <AnimatePresence>
         {selectedImage && (
@@ -223,7 +303,7 @@ export default function GalleryPage() {
           </motion.div>
         )}
       </AnimatePresence>
-      
+
       {/* Quote Section */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
