@@ -32,7 +32,7 @@ export default function ContactPage() {
               <div className="space-y-8">
                 {/* WhatsApp */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       width="24" 
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 
                 {/* Email */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
                     <Mail className="text-primary" />
                   </div>
                   <div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 
                 {/* Location */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
                     <MapPin className="text-primary" />
                   </div>
                   <div>

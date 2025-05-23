@@ -98,134 +98,76 @@ export default function AboutPage() {
       </section>
       
       {/* Timeline Section */}
-      <section className="section-padding bg-card relative">
-        <div className="container-custom max-w-4xl mx-auto">
-          <h2 className="heading-lg text-center mb-16">Career <span className="text-primary">Highlights</span></h2>
-          
-          {/* Timeline */}
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-0 lg:left-1/2 h-full w-1 bg-muted transform lg:translate-x-[-50%] z-0"></div>
-            
-            {/* Timeline items */}
-            <div className="space-y-16">
-              {/* 2013 */}
-              <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="flex lg:flex-1 flex-col items-end lg:pr-12 lg:text-right mb-6 lg:mb-0">
-                  <span className="text-secondary text-xl font-bold mb-2">2013</span>
-                  <h3 className="text-2xl font-semibold mb-2">Culinary Education</h3>
-                  <p className="text-muted-foreground">
-                    Completed formal culinary training with specialization in regional Indian cuisines
-                  </p>
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:translate-x-[-50%]">
-                  <div className="w-5 h-5 rounded-full bg-secondary"></div>
-                </div>
-                
-                <div className="lg:flex-1 lg:pl-12 hidden lg:block">
-                  {/* Empty for alignment */}
-                </div>
-              </div>
-              
-              {/* 2014 */}
-              <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="flex lg:flex-1 flex-col items-start lg:text-left lg:items-end lg:pr-12 lg:text-right hidden lg:block">
-                  {/* Empty for alignment */}
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:translate-x-[-50%]">
-                  <div className="w-5 h-5 rounded-full bg-secondary"></div>
-                </div>
-                
-                <div className="lg:flex-1 lg:pl-12 mb-6 lg:mb-0">
-                  <span className="text-secondary text-xl font-bold mb-2">2014</span>
-                  <h3 className="text-2xl font-semibold mb-2">Naga Chef Victory</h3>
-                  <p className="text-muted-foreground">
-                    Won Season 3 of the Naga Chef competition with his signature dish featuring smoked pork and axone
-                  </p>
-                </div>
-              </div>
-              
-              {/* 2015 */}
-              <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="flex lg:flex-1 flex-col items-end lg:pr-12 lg:text-right mb-6 lg:mb-0">
-                  <span className="text-secondary text-xl font-bold mb-2">2015</span>
-                  <h3 className="text-2xl font-semibold mb-2">Hornbill Festival Feature</h3>
-                  <p className="text-muted-foreground">
-                    Showcased traditional Naga cuisine at the prestigious Hornbill Festival, representing the culinary heritage of the region
-                  </p>
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:translate-x-[-50%]">
-                  <div className="w-5 h-5 rounded-full bg-secondary"></div>
-                </div>
-                
-                <div className="lg:flex-1 lg:pl-12 hidden lg:block">
-                  {/* Empty for alignment */}
-                </div>
-              </div>
-              
-              {/* 2017 */}
-              <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="flex lg:flex-1 flex-col items-start lg:text-left lg:items-end lg:pr-12 lg:text-right hidden lg:block">
-                  {/* Empty for alignment */}
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:translate-x-[-50%]">
-                  <div className="w-5 h-5 rounded-full bg-secondary"></div>
-                </div>
-                
-                <div className="lg:flex-1 lg:pl-12 mb-6 lg:mb-0">
-                  <span className="text-secondary text-xl font-bold mb-2">2017</span>
-                  <h3 className="text-2xl font-semibold mb-2">Catering Business Launch</h3>
-                  <p className="text-muted-foreground">
-                    Established a successful catering business specializing in authentic Naga cuisine for events and private dining
-                  </p>
-                </div>
-              </div>
-              
-              {/* 2019 */}
-              <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="flex lg:flex-1 flex-col items-end lg:pr-12 lg:text-right mb-6 lg:mb-0">
-                  <span className="text-secondary text-xl font-bold mb-2">2019</span>
-                  <h3 className="text-2xl font-semibold mb-2">Product Line Launch</h3>
-                  <p className="text-muted-foreground">
-                    Introduced a line of artisanal Naga food products including specialty sausages and fermented goods
-                  </p>
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:translate-x-[-50%]">
-                  <div className="w-5 h-5 rounded-full bg-secondary"></div>
-                </div>
-                
-                <div className="lg:flex-1 lg:pl-12 hidden lg:block">
-                  {/* Empty for alignment */}
-                </div>
-              </div>
-              
-              {/* 2022 */}
-              <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
-                <div className="flex lg:flex-1 flex-col items-start lg:text-left lg:items-end lg:pr-12 lg:text-right hidden lg:block">
-                  {/* Empty for alignment */}
-                </div>
-                
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center lg:absolute lg:left-1/2 lg:transform lg:translate-x-[-50%]">
-                  <div className="w-5 h-5 rounded-full bg-secondary"></div>
-                </div>
-                
-                <div className="lg:flex-1 lg:pl-12">
-                  <span className="text-secondary text-xl font-bold mb-2">2022</span>
-                  <h3 className="text-2xl font-semibold mb-2">Digital Content Creation</h3>
-                  <p className="text-muted-foreground">
-                    Expanded into digital content, sharing authentic Naga recipes and culinary knowledge on various platforms
-                  </p>
-                </div>
-              </div>
+     <section className="section-padding bg-card relative">
+  <div className="container-custom max-w-4xl mx-auto">
+    <h2 className="heading-lg text-center mb-16">
+      Career <span className="text-primary">Highlights</span>
+    </h2>
+
+    {/* Timeline */}
+    <div className="relative">
+      {/* Timeline line */}
+      <div className="absolute left-5 top-0 bottom-0 w-1 bg-muted z-0"></div>
+
+      {/* Timeline items */}
+      <div className="space-y-16">
+        {/* Timeline Entry Template */}
+        {[
+          {
+            year: '2013',
+            title: 'Culinary Education',
+            description:
+              'Completed formal culinary training with specialization in regional Indian cuisines',
+          },
+          {
+            year: '2014',
+            title: 'Naga Chef Victory',
+            description:
+              'Won Season 3 of the Naga Chef competition with his signature dish featuring smoked pork and axone',
+          },
+          {
+            year: '2015',
+            title: 'Hornbill Festival Feature',
+            description:
+              'Showcased traditional Naga cuisine at the prestigious Hornbill Festival, representing the culinary heritage of the region',
+          },
+          {
+            year: '2017',
+            title: 'Catering Business Launch',
+            description:
+              'Established a successful catering business specializing in authentic Naga cuisine for events and private dining',
+          },
+          {
+            year: '2019',
+            title: 'Product Line Launch',
+            description:
+              'Introduced a line of artisanal Naga food products including specialty sausages and fermented goods',
+          },
+          {
+            year: '2022',
+            title: 'Digital Content Creation',
+            description:
+              'Expanded into digital content, sharing authentic Naga recipes and culinary knowledge on various platforms',
+          },
+        ].map((item, idx) => (
+          <div key={idx} className="relative z-10 pl-12">
+            {/* Timeline dot */}
+            <div className="absolute left-0 top-1 w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+              <div className="w-5 h-5 rounded-full bg-secondary"></div>
             </div>
+            {/* Content */}
+            <span className="text-secondary text-xl font-bold mb-2 block">
+              {item.year}
+            </span>
+            <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
+            <p className="text-muted-foreground">{item.description}</p>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
       
       {/* Testimonials Section */}
       <section className="section-padding bg-background">
