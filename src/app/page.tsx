@@ -144,7 +144,7 @@ export default function HomePage() {
             <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
               <Image
                 src="/images/FEATURED_DISH.jpg"
-                alt="Lang Lang Chicken prepared by Chef Salang Yanger"
+                alt="Dish prepared by Chef Salang Yanger"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

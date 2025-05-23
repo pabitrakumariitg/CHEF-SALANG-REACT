@@ -184,7 +184,7 @@ export default function GalleryPage() {
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
             <Image
-              src="/images/Lang Lang chicken during Naga Chef.jpg"
+              src="/images/LangLangChef.jpg"
               alt="Lang Lang Chicken prepared by Chef Salang Yanger"
               fill
               className="object-cover"
