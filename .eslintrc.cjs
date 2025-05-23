@@ -10,7 +10,7 @@ const config = {
         "@typescript-eslint",
         "react",
         "react-hooks",
-        "creatr"
+        
     ],
     "globals": {
         "React": "readonly"
@@ -38,7 +38,7 @@ const config = {
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/typescript",
-        "plugin:creatr/recommended"
+        
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
