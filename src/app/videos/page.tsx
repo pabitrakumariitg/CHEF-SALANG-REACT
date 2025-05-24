@@ -15,8 +15,8 @@ export default function VideosPage() {
   const featuredVideos = [
     {
       id: 'v1',
-      title: 'Traditional Naga Smoked Pork Recipe',
-      description: 'Learn how to prepare authentic smoked pork with Chef Salang\'s special techniques.',
+      title: 'Ask the Chef',
+      description: 'Learn about Chef Salang Yanger, an award-winning chef specializing in authentic Naga cuisine.',
       thumbnail: 'https://images.unsplash.com/photo-1668236543090-82475c010f12?q=80&w=2940&auto=format&fit=crop',
       url: 'https://www.youtube.com/watch?v=AaPA0GWd2i8',
       duration: '12:45',
