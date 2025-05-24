@@ -1,6 +1,5 @@
 'use client';
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
@@ -13,15 +12,13 @@ const ReactPlayer = dynamic(() => import('react-player/lazy'), {
 });
 
 export default function VideosPage() {
-  const [selectedVideo, setSelectedVideo] = useState(null);
-
   const featuredVideos = [
     {
       id: 'v1',
       title: 'Traditional Naga Smoked Pork Recipe',
       description: 'Learn how to prepare authentic smoked pork with Chef Salang\'s special techniques.',
       thumbnail: 'https://images.unsplash.com/photo-1668236543090-82475c010f12?q=80&w=2940&auto=format&fit=crop',
-      url: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+      url: 'https://www.youtube.com/watch?v=AaPA0GWd2i8',
       duration: '12:45',
       category: 'Recipe'
     },
@@ -103,7 +100,12 @@ export default function VideosPage() {
     },
   ];
 
+  const [selectedVideo, setSelectedVideo] = useState(null);
   const videoCategories = Array.from(new Set(allVideos.map(video => video.category)));
+
+  useEffect(() => {
+    setSelectedVideo(featuredVideos[0]); // Auto select first video for autoplay
+  }, []);
 
   return (
     <div className="pt-24">
@@ -125,15 +127,14 @@ export default function VideosPage() {
           <div className="mb-12">
             <h2 className="heading-lg mb-8">Featured <span className="text-primary">Videos</span></h2>
 
-            {/* Video Player */}
             <div className="bg-card p-6 rounded-lg">
               <div className="aspect-video rounded-lg overflow-hidden mb-6">
                 <ReactPlayer
-                  url={selectedVideo ? selectedVideo.url : featuredVideos[0].url}
+                  url={selectedVideo ? selectedVideo.url : ''}
                   width="100%"
                   height="100%"
                   controls
-                  playing={!!selectedVideo}
+                  playing
                   config={{
                     file: {
                       attributes: {
@@ -145,20 +146,18 @@ export default function VideosPage() {
               </div>
 
               <h3 className="text-2xl font-semibold mb-2">
-                {selectedVideo ? selectedVideo.title : featuredVideos[0].title}
+                {selectedVideo?.title}
               </h3>
               <p className="text-muted-foreground mb-6">
-                {selectedVideo ? selectedVideo.description : featuredVideos[0].description}
+                {selectedVideo?.description}
               </p>
 
-              {/* Featured Videos Thumbnails */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {featuredVideos.map((video) => (
                   <div
                     key={video.id}
                     onClick={() => setSelectedVideo(video)}
-                    className={`relative rounded-lg overflow-hidden cursor-pointer transition-all ${selectedVideo && selectedVideo.id === video.id ? 'ring-2 ring-primary' : ''
-                      }`}
+                    className={`relative rounded-lg overflow-hidden cursor-pointer transition-all ${selectedVideo?.id === video.id ? 'ring-2 ring-primary' : ''}`}
                   >
                     <div className="relative aspect-video">
                       <Image
@@ -258,7 +257,6 @@ export default function VideosPage() {
           </a>
         </div>
       </section>
-
     </div>
   );
 }

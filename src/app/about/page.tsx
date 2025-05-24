@@ -47,7 +47,7 @@ export default function AboutPage() {
           <div className="order-1 lg:order-2">
             <div className="relative h-[400px] lg:h-[600px] rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=3454&auto=format&fit=crop"
+                src="/images/IMG-20250523-WA0019.jpg"
                 alt="Chef Salang Yanger in his kitchen"
                 fill
                 className="object-cover"
