@@ -52,7 +52,7 @@ const galleryImages = {
   mains: [
     {
       id: "main-1",
-      src: "/images/Pork_roast.jpg",
+      src: "/images/PorkRoast.jpg",
       alt: "Roasted pork with herbs and vegetables",
       title: "Pork Roast"
     },
@@ -64,13 +64,13 @@ const galleryImages = {
     },
     {
       id: "main-3",
-      src: "/images/BBQ PORK.jpg",
+      src: "/images/BBQPORK.jpg",
       alt: "Grilled BBQ pork with smoky glaze",
       title: "Barbeque Pork"
     },
     {
       id: "main-4",
-      src: "/images/Chicken BBQ .jpg",
+      src: "/images/ChickenBBQ.jpg",
       alt: "Grilled barbeque chicken",
       title: "Barbeque Chicken"
     },
@@ -179,40 +179,7 @@ export default function GalleryPage() {
           </p>
         </div>
       </section>
-      {/* Signature Dish */}
-      <section className="section-padding bg-card">
-        <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
-            <Image
-              src="/images/Lang-CHICKEN.jpg"
-              alt="Lang Lang Chicken prepared by Chef Salang Yanger"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-
-          <div>
-            <h1 className="text-40xl heading-lg  ">
-              <span className="text-primary">Lang Lang </span>Chicken
-            </h1>
-            <p className="  italic font-[cursive] text-secondary text-center text-muted-foreground">
-              - Signature Dish Of Chef Salang Yanger
-            </p>
-
-            <p className="text-lg text-muted-foreground mb-6">
-              A bold reinterpretation of a traditional Naga delicacy, Chef Salang Yanger's <strong>Lang Lang Chicken</strong> combines smoky flavors of indigenous spices, bamboo shoot, and fresh herbs with a slow-roasted preparation method that highlights the earthy depth of Naga cuisine.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              This signature dish, which earned acclaim during his championship run in <strong>Naga Chef Season 3</strong>, is a celebration of cultural authenticity and modern presentation. It brings together the community’s culinary wisdom with Chef Salang’s flair for innovation.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Often served with fermented soybean chutney and sticky rice, Lang Lang Chicken is not just a dish—it’s an experience that connects tradition with today’s gourmet expectations.
-            </p>
-          </div>
-        </div>
-      </section>
-
+     
       {/* Gallery Section */}
       <section className="section-padding bg-background">
         <div className="container-custom">
