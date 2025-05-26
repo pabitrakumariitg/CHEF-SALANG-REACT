@@ -88,7 +88,7 @@ const galleryImages = {
     },
     {
       id: "main-7",
-      src: "/images/Crispypork.JPG",
+      src: "/images/Crispypork.jpg",
       alt: "Crispy fried pork slices",
       title: "Crispy Pork"
     },
