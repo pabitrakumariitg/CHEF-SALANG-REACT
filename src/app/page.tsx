@@ -163,7 +163,7 @@ export default function HomePage() {
             <div className="flex flex-col items-center">
               <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
                 <Image
-                  src="/images/Pork_Roast.jpg"
+                  src="/images/PorkRoast.jpg"
                   alt="Porkshe - Deep-Fried Pork"
                   fill
                   className="object-cover"
