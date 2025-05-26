@@ -21,10 +21,10 @@ export default function HomePage() {
         </div>
 
         <div className="container-custom relative z-10 text-center">
-
+          {/* 
           <p className="text-xl md:text-6xl text-white mt-6 max-w-3xl mx-auto">
             Winner of Naga Chef <span className="text-secondary">Season 3</span>
-          </p>
+          </p> */}
 
           <h1 className="text-3xl md:text-7xl font-bold text-primary drop-shadow-lg mt-6">
             Mastering the Art of Naga Cuisine with Every Dish.
