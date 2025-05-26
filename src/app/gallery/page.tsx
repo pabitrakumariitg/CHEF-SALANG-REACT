@@ -115,7 +115,7 @@ const galleryImages = {
   , food_hampers: [
     {
       id: "hamp-1",
-      src: "/images/Food hamper.jpg",
+      src: "/images/Foodhamper.jpg",
       alt: "Gourmet food hamper with smoked sausages, shrimps, roasted potatoes, and salad",
       title: "Gourmet Meat & Shrimp Hamper"
     },
