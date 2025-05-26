@@ -57,72 +57,79 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-   {/* Featured In Magazine */}
-<section className="section-padding bg-card">
-  <div className="container-custom">
-    <h2 className="heading-lg font-bold text-center mb-6">Featured In <span className="text-primary">The LEELA MAGAZINE </span> </h2>
-  
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-      <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
-        <Image
-          src="/images/magazine-left.jpg"
-          alt="Dish prepared by Chef Salang Yanger"
-          fill
-          className="object-fit"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </div>
-      <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
-        <Image
-          src="/images/magazine-right.jpg"
-          alt="Magazine feature of Chef Salang Yanger"
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+      {/* Featured In Magazine */}
+      <section className="section-padding bg-card">
+        <div className="container-custom">
+          <h2 className="heading-lg font-bold text-center mb-6">Featured In <span className="text-primary">The LEELA MAGAZINE </span> </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
+              <Image
+                src="/images/magazine-left.jpg"
+                alt="Dish prepared by Chef Salang Yanger"
+                fill
+                className="object-fit"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
+              <Image
+                src="/images/magazine-right.jpg"
+                alt="Magazine feature of Chef Salang Yanger"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Full Bio Section */}
       <section className="section-padding bg-background">
         <div className="container-custom max-w-4xl mx-auto">
-          <h2 className="heading-lg text-center mb-16">The Culinary <span className="text-primary">Journey</span></h2>
+          <h2 className="heading-lg text-center mb-12">
+            Meet <span className="text-primary">Chef Salangyanger Jamir</span>
+          </h2>
 
           <div className="prose prose-lg prose-invert mx-auto">
             <p>
-              Born and raised in Nagaland, Chef Salang Yanger's culinary journey began in his mother's kitchen,
-              where he learned the traditional cooking methods that would later become the foundation of his culinary philosophy.
+              Chef Salangyanger Jamir is a professional chef from Mopungchuket village in Mokokchung district, Nagaland, and is currently based in Kohima. Known for his creative approach to food, he blends traditional Naga ingredients and cooking methods with modern techniques to give local dishes a fresh twist.
             </p>
 
             <p>
-              After completing his formal culinary education, Chef Salang dedicated himself to mastering the
-              complexities of Naga cuisine—a rich tapestry of flavors characterized by its bold use of indigenous
-              herbs, fermented ingredients, and distinctive cooking techniques.
+              After winning the title of ‘Naga Chef’ at the Hornbill Festival in 2015, Chef Salangyanger gained recognition for his dedication to preserving and promoting Naga cuisine. He also specializes in Japanese cooking and vegetable carving, bringing a unique style and precision to his dishes.
             </p>
 
             <p>
-              His breakthrough came when he won Season 3 of the prestigious Naga Chef competition,
-              where his innovative approach to traditional dishes captivated both judges and audiences.
-              This victory opened doors to showcase his talents at various culinary events across India,
-              including the renowned Hornbill Festival in 2015.
+              He is the author of the cookbook <em>Naga Appetite: A Collection of Essential Recipes</em>, which features authentic recipes using Naga spices, herbs, and local ingredients. His experiences include time at top hotels across India, such as The Grand (New Delhi), Leela Palace (Bengaluru), and Crown Plaza (Gurgaon)—which helped him sharpen his skills and expand his cooking knowledge.
             </p>
 
             <p>
-              Chef Salang's cooking style honors tradition while embracing modern techniques and presentation.
-              His philosophy centers around sustainable cooking practices, supporting local farmers,
-              and educating people about the rich culinary heritage of Nagaland.
+              Chef Salangyanger has taken Naga food to the international stage, including at the V-Rox Expo in Vladivostok, Russia, where he showcased his signature dishes like:
+            </p>
+
+            <ul>
+              <li><strong>Lang Lang Chicken</strong> – chicken with Szechuan pepper, sautéed lasagna, and cherry tomatoes</li>
+              <li><strong>Porkshe</strong> – deep-fried pork served with local chutney</li>
+              <li><strong>Bamboo Shoot Pork with Raja Mircha Chutney</strong></li>
+            </ul>
+
+            <p>
+              He also represented Nagaland at the North East India Festival in Bangkok, where he hosted a pop-up experience featuring Naga cuisine, giving international guests a taste of authentic flavors from the region. His bold, flavorful creations received great feedback from international food lovers curious about Nagaland’s cuisine.
             </p>
 
             <p>
-              Today, Chef Salang runs a successful catering business, creates content showcasing Naga cuisine,
-              develops specialty food products, and continues to be an ambassador for northeastern Indian cuisine
-              on national and international platforms.
+              Today, he runs workshops and cooking classes in Nagaland and co-owns <strong>Aromatic Fusion</strong>, a catering service that explores creative food ideas. He also has a food processing unit called <strong>The Bouffage Experience</strong> in Dimapur, which ensures that the essence of Nagaland reaches far and wide.
+            </p>
+
+            <p>
+              His goal is to keep Naga food culture alive, while also making it exciting and accessible for new audiences.
             </p>
           </div>
         </div>
       </section>
+
 
       {/* Timeline Section */}
       <section className="section-padding bg-card relative">

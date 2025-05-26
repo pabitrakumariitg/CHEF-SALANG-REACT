@@ -27,7 +27,7 @@ export default function HomePage() {
           </p>
 
           <h1 className="text-3xl md:text-7xl font-bold text-primary drop-shadow-lg mt-6">
-            Celebrating Naga Cuisine
+            Mastering the Art of Naga Cuisine with Every Dish.
           </h1>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -137,32 +137,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Dish */}
+      {/* Signature dishes */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden card-hover">
-              <Image
-                src="/images/FEATURED_DISH.jpg"
-                alt="Dish prepared by Chef Salang Yanger"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+          <h2 className="heading-lg font-bold text-center mb-6">
+            Signature <span className="text-primary">Dishes</span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            {/* Dish 1 */}
+            <div className="flex flex-col items-center">
+              <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
+                <Image
+                  src="/images/Lang-CHICKEN.jpg"
+                  alt="Lang Lang Chicken"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <p className="mt-4 text-center text-secondary font-semibold text-lg">Lang Lang Chicken</p>
             </div>
 
-            {/* Content */}
-            <div className="relative p-12 md:p-16 lg:p-24 max-w-13xl">
-              <h3 className="text-secondary text-4xl mb-2">Featured Dish</h3>
-              <p className="mb-6 italic font-[cursive]">~ Potroast Chicken in a sweet chili sauce garnished with local mustard leaves and edible herbs and flowers</p>
-
-              <Link href="/gallery" className="btn-secondary">
-                Explore Gallery
-              </Link>
+            {/* Dish 2 */}
+            <div className="flex flex-col items-center">
+              <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
+                <Image
+                  src="/images/Pork_Roast.jpg"
+                  alt="Porkshe - Deep-Fried Pork"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <p className="mt-4 text-center text-secondary font-semibold text-lg">Porkshe </p>
             </div>
           </div>
         </div>
       </section>
+
+
 
 
       {/* CTA Section */}
