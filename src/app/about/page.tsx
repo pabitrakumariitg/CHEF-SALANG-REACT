@@ -110,8 +110,8 @@ export default function AboutPage() {
             </p>
 
             <ul>
-              <li><strong>Lang Lang Chicken</strong> – chicken with Szechuan pepper, sautéed lasagna, and cherry tomatoes</li>
-              <li><strong>Porkshe</strong> – deep-fried pork served with local chutney</li>
+              <li><strong>Lang Lang Chicken</strong> – Pot Roasted Chicken with Szechuan pepper, sautéed Alu Lasung (Naga wild Garlic) , and cherry tomatoes</li>
+              <li><strong>Porkshe</strong> – deep-fried pork served with Nuoshi chutney</li>
               <li><strong>Bamboo Shoot Pork with Raja Mircha Chutney</strong></li>
             </ul>
 
@@ -151,13 +151,13 @@ export default function AboutPage() {
                   year: '2013',
                   title: 'Culinary Education',
                   description:
-                    'Completed formal culinary training with specialization in regional Indian cuisines',
+                    'Completed formal culinary training with specialization in pan-Asian and Continental cusines',
                 },
                 {
                   year: '2014',
                   title: 'Naga Chef Victory',
                   description:
-                    'Won Season 3 of the Naga Chef competition with his signature dish featuring smoked pork and axone',
+                    'Won Season 3 of the Naga Chef competition with his signature dish featuring LANG LANG Chicken and Last Taste (Sweet Potato Pudding)',
                 },
                 {
                   year: '2015',

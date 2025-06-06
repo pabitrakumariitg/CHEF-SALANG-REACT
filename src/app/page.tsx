@@ -189,7 +189,7 @@ export default function HomePage() {
             Let Chef Salang create a memorable culinary experience for your next event.
           </p>
           <a
-            href="https://wa.me/+918794854520"
+            href="https://wa.me/+918798769559"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"

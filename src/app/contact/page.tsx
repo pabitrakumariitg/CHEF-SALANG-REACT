@@ -57,12 +57,12 @@ export default function ContactPage() {
                       For the quickest response, reach out via WhatsApp
                     </p>
                     <a
-                      href="https://wa.me/+918794854520"
+                      href="https://wa.me/+918798769559"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary font-medium hover:underline"
                     >
-                      +918794854520
+                      +918798769559
                     </a>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export default function ContactPage() {
             we're excited to hear from you.
           </p>
           <a
-            href="https://wa.me/+918794854520"
+            href="https://wa.me/+918798769559"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
