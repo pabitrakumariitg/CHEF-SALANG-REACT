@@ -110,6 +110,12 @@ const galleryImages = {
       src: "/images/IMG_3193.jpg",
       alt: "Detailed flower carving with red-tipped petals and green leaves on a white melon",
       title: "Floral Melon Bloom"
+    },
+    {
+      id: "carv-3",
+      src: "/images/fruit_carving_3.jpg",
+      alt: "A decorative arrangement of pink roses and carved fruits, perfect for a festive outdoor event.",
+      title: "Floral & Fruit Display"
     }
   ]
   , food_hampers: [

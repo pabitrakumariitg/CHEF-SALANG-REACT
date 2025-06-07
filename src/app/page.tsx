@@ -170,7 +170,7 @@ export default function HomePage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <p className="mt-4 text-center text-secondary font-semibold text-lg">Porkshe </p>
+              <p className="mt-4 text-center text-secondary font-semibold text-lg">Pork Roast </p>
             </div>
           </div>
         </div>
