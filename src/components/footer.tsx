@@ -32,7 +32,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5 text-white hover:text-primary transition-colors" />
               </motion.a>
               <motion.a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/share/1Eh7KEDw6Z/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -41,7 +41,7 @@ export function Footer() {
                 <Facebook className="w-5 h-5 text-white hover:text-primary transition-colors" />
               </motion.a>
               <motion.a 
-                href="https://youtube.com" 
+                href="https://www.youtube.com/@cookingwithchefsalang" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}

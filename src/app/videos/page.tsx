@@ -240,7 +240,7 @@ export default function VideosPage() {
             Never miss a new video! Subscribe to Chef Salang's YouTube channel for weekly cooking tutorials, vlogs, and more.
           </p>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@cookingwithchefsalang"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"

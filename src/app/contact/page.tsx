@@ -117,7 +117,7 @@ export default function ContactPage() {
                   </a>
 
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/share/1Eh7KEDw6Z/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center p-3 bg-card rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all"
@@ -127,7 +127,7 @@ export default function ContactPage() {
                   </a>
 
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@cookingwithchefsalang"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center p-3 bg-card rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all"

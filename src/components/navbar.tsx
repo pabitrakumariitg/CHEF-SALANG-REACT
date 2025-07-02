@@ -73,7 +73,7 @@ export function Navbar() {
 						<Instagram className="w-5 h-5 text-white hover:text-primary transition-colors" />
 					</a>
 					<a
-						href="https://facebook.com"
+						href="https://www.facebook.com/share/1Eh7KEDw6Z/"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Facebook"
@@ -81,7 +81,7 @@ export function Navbar() {
 						<Facebook className="w-5 h-5 text-white hover:text-primary transition-colors" />
 					</a>
 					<a
-						href="https://youtube.com"
+						href="https://www.youtube.com/@cookingwithchefsalang"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="YouTube"
@@ -138,7 +138,7 @@ export function Navbar() {
 										<Instagram className="w-6 h-6 text-white hover:text-primary transition-colors" />
 									</a>
 									<a
-										href="https://facebook.com"
+										href="https://www.facebook.com/share/1Eh7KEDw6Z/"
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label="Facebook"
@@ -146,7 +146,7 @@ export function Navbar() {
 										<Facebook className="w-6 h-6 text-white hover:text-primary transition-colors" />
 									</a>
 									<a
-										href="https://youtube.com"
+										href="https://www.youtube.com/@cookingwithchefsalang"
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label="YouTube"
