@@ -29,25 +29,11 @@ const products = [
     name: "BBQ Pork",
     description: "Juicy pork glazed with a smoky BBQ sauce infused with Naga herbs. Great for grilling or as a hearty side.",
     image: "/images/BBQPORK.jpg",
-    price: "₹350 /pack",
+    price: "₹400 /pack",
     category: "Red Meat"
   },
-  {
-    id: 4,
-    name: "Spicy Pork Sausage",
-    description: "Handmade pork sausages packed with fiery Naga spices. Add a kick to your stews or grill them up.",
-    image: "/images/ChickenBBQ.jpg",
-    price: "₹200 /pack",
-    category: "Red Meat"
-  },
-  {
-    id: 5,
-    name: "Smoked Pork Sausage",
-    description: "Traditional smoked pork sausages crafted with authentic Naga spices. Perfect for grilling or stews.",
-    image: "/images/Chicken_&_Fish_Roast.jpg",
-    price: "₹200 /pack",
-    category: "Red Meat"
-  },
+  
+  
   {
     id: 6,
     name: "Pork in Black Bean",
@@ -56,14 +42,7 @@ const products = [
     price: "₹220 /pack",
     category: "Red Meat"
   },
-  {
-    id: 7,
-    name: "Beef Cocktail Sausage",
-    description: "Bite-sized beef sausages with a hint of Naga spices. Perfect for appetizers or party snacks.",
-    image: "/images/PorkRoast.jpg",
-    price: "₹190 /pack",
-    category: "Red Meat"
-  },
+  
   {
     id: 8,
     name: "Beef Chilli Pot",
@@ -154,14 +133,7 @@ const products = [
     price: "₹250 /pack",
     category: "White Meat"
   },
-  {
-    id: 19,
-    name: "Chicken Sausage",
-    description: "Handcrafted chicken sausages with a touch of Naga spices. Great for grilling or breakfast.",
-    image: "/images/Chicken_kimbap_.jpg",
-    price: "₹180 /pack",
-    category: "White Meat"
-  },
+  
   {
     id: 20,
     name: "Chilly Chicken",
