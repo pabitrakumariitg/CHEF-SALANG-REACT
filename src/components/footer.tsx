@@ -12,10 +12,7 @@ export function Footer() {
           {/* Logo and about */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold">
-                <span className="text-primary">CHEF</span> 
-                <span className="text-white">SALANG</span>
-              </span>
+              <img src="/Chef Salang W.png" alt="Logo" className='w-1/2' />
             </Link>
             <p className="text-muted-foreground mb-6">
               Award-winning chef specializing in authentic Naga cuisine. Winner of Naga Chef Season 3 

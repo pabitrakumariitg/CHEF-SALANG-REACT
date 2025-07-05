@@ -15,19 +15,29 @@ export const metadata: Metadata = {
     default: "Chef Salang Yanger | Award-Winning Naga Cuisine",
     template: "%s | Chef Salang Yanger",
   },
-  description: "Chef Salang Yanger is an award-winning chef specializing in authentic Naga cuisine. Winner of Naga Chef Season 3 and featured at Hornbill Festival 2015.",
-  keywords: ["Chef Salang Yanger", "Naga cuisine", "Naga food", "Naga Chef", "award-winning chef", "catering", "traditional Naga food", "Hornbill Festival"],
+  description:
+    "Chef Salang Yanger is an award-winning chef specializing in authentic Naga cuisine. Winner of Naga Chef Season 3 and featured at Hornbill Festival 2015.",
+  keywords: [
+    "Chef Salang Yanger",
+    "Naga cuisine",
+    "Naga food",
+    "Naga Chef",
+    "award-winning chef",
+    "catering",
+    "traditional Naga food",
+    "Hornbill Festival",
+  ],
   authors: [{ name: "Chef Salang Yanger" }],
   creator: "Chef Salang Yanger",
   publisher: "KAKI",
   icons: {
     icon: [
-      { url: "/Kaki.jpg", sizes: "16x16", type: "image/png" },
-      { url: "/Kaki.jpg", sizes: "32x32", type: "image/png" },
-      { url: "/Kaki.jpg", sizes: "48x48", type: "image/x-icon" },
+      { url: "/images/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/favicon.png", sizes: "48x48", type: "image/x-icon" },
     ],
     apple: [
-      { url: "/Kaki.jpg", sizes: "180x180", type: "image/png" },
+      { url: "/images/favicon.png", sizes: "180x180", type: "image/png" },
     ],
   },
 
@@ -46,14 +56,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen flex flex-col">
-
+      <body className="flex min-h-screen flex-col">
         <Navbar />
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
         <Footer />
-
       </body>
     </html>
   );

@@ -7,14 +7,14 @@ export const metadata = {
     "Chef Salang Yanger offers premium catering services featuring authentic Naga cuisine for weddings, corporate events, private parties and more.",
 };
 const titles = [
-  "Chilli Garlic Pork",
+  "Chicken Salt and Pepper",
   "Green Salad",
   "Butter Garlic Prawn",
   "Red Chutney",
-  "",
   "Crispy Pork",
-  "Chicken Salt and Pepper",
-  "Pork in Bambooshoot",
+  "Pork in Babooshoot",
+  "Chilli Garkic Pork",
+  "Rosup",
   "Naga Beans",
   "Smoked beef in Nuoshi",
   "",
@@ -370,8 +370,8 @@ export default function CateringPage() {
                   </div>
                   <p className="text-muted-foreground">
                     Naga Style – Traditional preparation with fermented bamboo
-                    shoots and indigenous spices | Chinese – Stir-fried with
-                    ginger and soy
+                    shoots and indigenous spices <br /> Chinese – Stir-fried
+                    with ginger and soy
                   </p>
                 </div>
 
@@ -380,9 +380,9 @@ export default function CateringPage() {
                     <h4 className="text-lg font-medium">Chicken</h4>
                   </div>
                   <p className="text-muted-foreground">
-                    Naga Style – Cooked with axone (fermented soybean) and local
-                    herbs | Chinese – Wok-tossed with garlic and oriental
-                    flavors
+                    Naga Style – We cook in dry bambooshoot and local herbs
+                    <br />
+                    Chinese – Wok-tossed with garlic and oriental flavors
                   </p>
                 </div>
 
@@ -391,8 +391,8 @@ export default function CateringPage() {
                     <h4 className="text-lg font-medium">Beef</h4>
                   </div>
                   <p className="text-muted-foreground">
-                    Indian Style – Rich curry with aromatic spices | Chinese –
-                    Tender beef strips in savory sauce
+                    Indian Style – Rich curry with aromatic spices <br />{" "}
+                    Chinese – Tender beef strips in savory sauce
                   </p>
                 </div>
 
@@ -401,7 +401,8 @@ export default function CateringPage() {
                     <h4 className="text-lg font-medium">Prawns</h4>
                   </div>
                   <p className="text-muted-foreground">
-                    Chilli Garlic – Spicy prawns with garlic and red chilies |
+                    Chilli Garlic – Spicy prawns with garlic and red chilies{" "}
+                    <br />
                     Stir-Fry – Quick-cooked with vegetables and Asian seasonings
                   </p>
                 </div>
@@ -459,7 +460,7 @@ export default function CateringPage() {
                     <h4 className="text-lg font-medium">Steamed Rice</h4>
                   </div>
                   <p className="text-muted-foreground">
-                    Perfectly steamed jasmine rice, the ideal base for our
+                    Perfectly steamed basmati rice, the ideal base for our
                     flavorful dishes
                   </p>
                 </div>

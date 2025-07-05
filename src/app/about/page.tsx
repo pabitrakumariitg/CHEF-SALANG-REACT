@@ -163,7 +163,7 @@ export default function AboutPage() {
                   year: '2015',
                   title: 'Hornbill Festival Feature',
                   description:
-                    'Showcased traditional Naga cuisine at the prestigious Hornbill Festival, representing the culinary heritage of the region',
+                    'I won the Naga chef in 2015 Hornbill Festival',
                 },
                 {
                   year: '2017',
