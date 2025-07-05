@@ -22,7 +22,7 @@ export default function VideosPage() {
         "Learn about Chef Salang Yanger, an award-winning chef specializing in authentic Naga cuisine.",
       thumbnail:
         "https://images.unsplash.com/photo-1668236543090-82475c010f12?q=80&w=2940&auto=format&fit=crop",
-      url: "https://www.youtube.com/watch?v=AaPA0GWd2i8",
+      url: "https://youtu.be/969NgWGt5-o?si=pilhw4BRxBZlc9YS",
       duration: "12:45",
       category: "Recipe",
     },
@@ -91,36 +91,11 @@ export default function VideosPage() {
             <div className="rounded-lg bg-card p-6">
               <div className="mb-6 aspect-video overflow-hidden rounded-lg">
                 <ReactPlayer
-                url="https://youtube.com/shorts/ypRUF_Xmp7c?si=rHNTDWbPPQ2KxAjt"
-                
+                  url="https://youtube.com/shorts/ypRUF_Xmp7c?si=rHNTDWbPPQ2KxAjt"
                   width="100%"
                   height="100%"
                   controls
                   playing
-                  config={{
-                    file: {
-                      attributes: {
-                        controlsList: "nodownload",
-                      },
-                    },
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="mb-12">
-            <div className="rounded-lg bg-card p-6">
-              <div className="mb-6 aspect-video overflow-hidden rounded-lg">
-                <ReactPlayer
-                    url="https://youtu.be/969NgWGt5-o?si=pilhw4BRxBZlc9YS"
-                  width="100%"
-                  height="100%"
-                  controls
-                  
                   config={{
                     file: {
                       attributes: {
