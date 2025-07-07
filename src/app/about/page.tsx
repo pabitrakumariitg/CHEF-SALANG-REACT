@@ -87,48 +87,91 @@ export default function AboutPage() {
 
       {/* Full Bio Section */}
       <section className="section-padding bg-background">
-        <div className="container-custom max-w-4xl mx-auto">
-          <h2 className="heading-lg text-center mb-12">
-            Meet <span className="text-primary">Chef Salangyanger Jamir</span>
-          </h2>
+  <div className="container-custom max-w-4xl mx-auto">
+    <h2 className="heading-lg text-center mb-12">
+      Meet <span className="text-primary">Chef Salangyanger Jamir</span>
+    </h2>
 
-          <div className="prose prose-lg prose-invert mx-auto">
-            <p>
-              Chef Salangyanger Jamir is a professional chef from Mopungchuket village in Mokokchung district, Nagaland, and is currently based in Kohima. Known for his creative approach to food, he blends traditional Naga ingredients and cooking methods with modern techniques to give local dishes a fresh twist.
-            </p>
+    <div className="prose prose-lg prose-invert mx-auto space-y-8">
+      <p>
+        Chef Salangyanger Jamir is a professional chef from Mopungchuket village in Mokokchung district, Nagaland, and is currently based in Kohima.
+        Known for his creative approach to food, he blends traditional Naga ingredients and cooking methods with modern techniques to give local dishes a fresh twist.
+      </p>
 
-            <p>
-              After winning the title of ‘Naga Chef’ at the Hornbill Festival in 2015, Chef Salangyanger gained recognition for his dedication to preserving and promoting Naga cuisine. He also specializes in Japanese cooking and vegetable carving, bringing a unique style and precision to his dishes.
-            </p>
+      <p>
+        After winning the title of ‘Naga Chef’ at the Hornbill Festival in 2015, Chef Salangyanger gained recognition for his dedication to preserving and promoting Naga cuisine.
+        He also specializes in Japanese cooking and vegetable carving, bringing a unique style and precision to his dishes.
+      </p>
 
-            <p>
-              He is the author of the cookbook <em>Naga Appetite: A Collection of Essential Recipes</em>, which features authentic recipes using Naga spices, herbs, and local ingredients. His experiences include time at top hotels across India, such as The Grand (New Delhi), Leela Palace (Bengaluru), and Crown Plaza (Gurgaon)—which helped him sharpen his skills and expand his cooking knowledge.
-            </p>
+      <p>
+        He is the author of the cookbook <em>Naga Appetite: A Collection of Essential Recipes</em>, which features authentic recipes using Naga spices, herbs, and local ingredients.
+        His experiences include time at top hotels across India—The Grand (New Delhi), Leela Palace (Bengaluru), and Crown Plaza (Gurgaon)—which helped him sharpen his skills and expand his cooking knowledge.
+      </p>
 
-            <p>
-              Chef Salangyanger has taken Naga food to the international stage, including at the V-Rox Expo in Vladivostok, Russia, where he showcased his signature dishes like:
-            </p>
+      <p>
+        Chef Salangyanger has taken Naga food to the international stage, including the V-Rox Expo in Vladivostok, Russia, where he showcased his signature dishes:
+      </p>
 
-            <ul>
-              <li><strong>Lang Lang Chicken</strong> – Pot Roasted Chicken with Szechuan pepper, sautéed Alu Lasung (Naga wild Garlic) , and cherry tomatoes</li>
-              <li><strong>Porkshe</strong> – deep-fried pork served with Nuoshi chutney</li>
-              <li><strong>Bamboo Shoot Pork with Raja Mircha Chutney</strong></li>
-            </ul>
-
-            <p>
-              He also represented Nagaland at the North East India Festival in Bangkok, where he hosted a pop-up experience featuring Naga cuisine, giving international guests a taste of authentic flavors from the region. His bold, flavorful creations received great feedback from international food lovers curious about Nagaland’s cuisine.
-            </p>
-
-            <p>
-              Today, he runs workshops and cooking classes in Nagaland and co-owns <strong>Aromatic Fusion</strong>, a catering service that explores creative food ideas. He also has a food processing unit called <strong>The Bouffage Experience</strong> in Dimapur, which ensures that the essence of Nagaland reaches far and wide.
-            </p>
-
-            <p>
-              His goal is to keep Naga food culture alive, while also making it exciting and accessible for new audiences.
-            </p>
-          </div>
+      {/* Dish 1 */}
+      <div className="bg-muted/10 rounded-xl p-4 md:p-6 shadow-sm">
+        <h3 className="text-xl font-semibold mb-2">Lang Lang Chicken</h3>
+        <p className="mb-4">
+          Pot Roasted Chicken with Szechuan pepper, sautéed Alu Lasung (Naga wild Garlic), and cherry tomatoes.
+        </p>
+        <div className="rounded-lg overflow-hidden shadow-md">
+          <img
+            src="/Lang Lang chicken during Naga Chef.jpg"
+            alt="Lang Lang Chicken"
+            className="w-full h-auto object-cover"
+          />
         </div>
-      </section>
+      </div>
+
+      {/* Dish 2 */}
+      <div className="bg-muted/10 rounded-xl p-4 md:p-6 shadow-sm">
+        <h3 className="text-xl font-semibold mb-2">Porkshe</h3>
+        <p className="mb-4">
+          Deep-fried pork served with Nuoshi chutney.
+        </p>
+        <div className="rounded-lg overflow-hidden shadow-md">
+          <img
+            src="/images/PorkRoast.jpg"
+            alt="Porkshe"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Dish 3 */}
+      <div className="bg-muted/10 rounded-xl p-4 md:p-6 shadow-sm">
+        <h3 className="text-xl font-semibold mb-2">Bamboo Shoot Pork with Raja Mircha Chutney</h3>
+        <div className="rounded-lg overflow-hidden shadow-md">
+          <img
+            src="/catering/image06.jpg"
+            alt="Bamboo Shoot Pork with Raja Mircha Chutney"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </div>
+
+      <p>
+        He also represented Nagaland at the North East India Festival in Bangkok, where he hosted a pop-up experience featuring Naga cuisine.
+        His bold, flavorful creations received great feedback from international food lovers curious about Nagaland’s culinary legacy.
+      </p>
+
+      <p>
+        Today, he runs workshops and cooking classes in Nagaland and co-owns <strong>Aromatic Fusion</strong>, a catering service that explores creative food ideas.
+        He also has a food processing unit called <strong>The Bouffage Experience</strong> in Dimapur, ensuring that the essence of Nagaland reaches far and wide.
+      </p>
+
+      <p>
+        His goal is to keep Naga food culture alive, while also making it exciting and accessible for new audiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
 
       {/* Timeline Section */}

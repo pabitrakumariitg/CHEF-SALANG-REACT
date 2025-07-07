@@ -14,9 +14,9 @@ const titles = [
   "Crispy Pork",
   "Pork in Babooshoot",
   "Chilli Garkic Pork",
-  "Rosup",
-  "Naga Beans",
   "Smoked beef in Nuoshi",
+  "Naga Beans",
+  "Rosup",
   "",
   "",
 ];
