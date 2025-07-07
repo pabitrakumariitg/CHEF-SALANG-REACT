@@ -82,7 +82,7 @@ export default function ContactPage() {
                       For detailed inquiries and formal communications
                     </p>
                     <a
-                      href="mailto:info@chefsalang.com"
+                      href="mailto:samoajr@gmail.com"
                       className="font-medium text-primary hover:underline"
                     >
                       samoajr@gmail.com
