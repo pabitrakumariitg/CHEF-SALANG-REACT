@@ -120,7 +120,7 @@ export default function AboutPage() {
         </p>
         <div className="rounded-lg overflow-hidden shadow-md">
           <img
-            src="/Lang Lang chicken during Naga Chef.jpg"
+            src="/images/Lang-CHICKEN.jpg"
             alt="Lang Lang Chicken"
             className="w-full h-auto object-cover"
           />
