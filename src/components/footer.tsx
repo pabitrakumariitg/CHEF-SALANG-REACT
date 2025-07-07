@@ -122,7 +122,7 @@ export function Footer() {
               <li className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-primary" />
                 <a
-                  href="mailto:info@chefsalang.com"
+                  href="mailto:samoajr@gmail.com"
                   className="text-muted-foreground transition-colors hover:text-primary"
                 >
                   samoajr@gmail.com
