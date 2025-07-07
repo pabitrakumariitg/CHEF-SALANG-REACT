@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import { Instagram, Facebook, Youtube, Mail, MapPin } from 'lucide-react';
+import Image from "next/image";
+import { Instagram, Facebook, Youtube, Mail, MapPin } from "lucide-react";
 
 export const metadata = {
-  title: 'Contact Chef Salang Yanger',
-  description: 'Get in touch with Chef Salang Yanger for catering services, collaborations, media inquiries, or product orders.',
+  title: "Contact Chef Salang Yanger",
+  description:
+    "Get in touch with Chef Salang Yanger for catering services, collaborations, media inquiries, or product orders.",
 };
 
 export default function ContactPage() {
@@ -15,8 +16,9 @@ export default function ContactPage() {
           <h1 className="heading-xl mb-6">
             Get in <span className="text-primary">Touch</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a question or want to work with Chef Salang? We'd love to hear from you!
+          <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
+            Have a question or want to work with Chef Salang? We'd love to hear
+            from you!
           </p>
         </div>
       </section>
@@ -24,15 +26,17 @@ export default function ContactPage() {
       {/* Contact Options */}
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             {/* Left Side - Contact Info */}
             <div>
-              <h2 className="heading-lg mb-8">Contact <span className="text-primary">Information</span></h2>
+              <h2 className="heading-lg mb-8">
+                Contact <span className="text-primary">Information</span>
+              </h2>
 
               <div className="space-y-8">
                 {/* WhatsApp */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="mr-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary bg-opacity-10">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -52,15 +56,15 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground mb-2">
+                    <h3 className="mb-1 text-xl font-semibold">WhatsApp</h3>
+                    <p className="mb-2 text-muted-foreground">
                       For the quickest response, reach out via WhatsApp
                     </p>
                     <a
                       href="https://wa.me/+918798769559"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary font-medium hover:underline"
+                      className="font-medium text-primary hover:underline"
                     >
                       +918798769559
                     </a>
@@ -69,32 +73,33 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="mr-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary bg-opacity-10">
                     <Mail className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground mb-2">
+                    <h3 className="mb-1 text-xl font-semibold">Email</h3>
+                    <p className="mb-2 text-muted-foreground">
                       For detailed inquiries and formal communications
                     </p>
                     <a
                       href="mailto:info@chefsalang.com"
-                      className="text-primary font-medium hover:underline"
+                      className="font-medium text-primary hover:underline"
                     >
-                      info@chefsalang.com
+                      samoajr@gmail.com
                     </a>
                   </div>
                 </div>
 
                 {/* Location */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="mr-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary bg-opacity-10">
                     <MapPin className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-1">Location</h3>
+                    <h3 className="mb-1 text-xl font-semibold">Location</h3>
                     <p className="text-muted-foreground">
-                      Based in Kohima, Nagaland, India<br />
+                      Based in Kohima, Nagaland, India
+                      <br />
                       Available for travel and events nationwide
                     </p>
                   </div>
@@ -103,16 +108,18 @@ export default function ContactPage() {
 
               {/* Social Media */}
               <div className="mt-12">
-                <h3 className="text-xl font-semibold mb-6">Connect on Social Media</h3>
+                <h3 className="mb-6 text-xl font-semibold">
+                  Connect on Social Media
+                </h3>
 
                 <div className="flex flex-col space-y-4">
                   <a
                     href="https://www.instagram.com/salangyanger/?igsh=a3VkMzM4dW1pdHRj#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-3 bg-card rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all"
+                    className="flex items-center rounded-lg bg-card p-3 transition-all hover:bg-primary hover:bg-opacity-10"
                   >
-                    <Instagram className="w-6 h-6 text-primary mr-4" />
+                    <Instagram className="mr-4 h-6 w-6 text-primary" />
                     <span className="font-medium">@chefsalangyanger</span>
                   </a>
 
@@ -120,9 +127,9 @@ export default function ContactPage() {
                     href="https://www.facebook.com/share/1Eh7KEDw6Z/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-3 bg-card rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all"
+                    className="flex items-center rounded-lg bg-card p-3 transition-all hover:bg-primary hover:bg-opacity-10"
                   >
-                    <Facebook className="w-6 h-6 text-primary mr-4" />
+                    <Facebook className="mr-4 h-6 w-6 text-primary" />
                     <span className="font-medium">Chef Salang Yanger</span>
                   </a>
 
@@ -130,9 +137,9 @@ export default function ContactPage() {
                     href="https://www.youtube.com/@cookingwithchefsalang"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-3 bg-card rounded-lg hover:bg-primary hover:bg-opacity-10 transition-all"
+                    className="flex items-center rounded-lg bg-card p-3 transition-all hover:bg-primary hover:bg-opacity-10"
                   >
-                    <Youtube className="w-6 h-6 text-primary mr-4" />
+                    <Youtube className="mr-4 h-6 w-6 text-primary" />
                     <span className="font-medium">Chef Salang's Kitchen</span>
                   </a>
                 </div>
@@ -140,7 +147,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right Side - Image */}
-            <div className="relative h-[500px] rounded-xl overflow-hidden">
+            <div className="relative h-[500px] overflow-hidden rounded-xl">
               <Image
                 src="/images/IMG-20250523-WA0026.jpg"
                 alt="Chef Salang preparing food"
@@ -153,50 +160,67 @@ export default function ContactPage() {
         </div>
       </section>
 
-
-
       {/* FAQ Section */}
       <section className="section-padding bg-background">
-        <div className="container-custom max-w-4xl mx-auto">
-          <h2 className="heading-lg text-center mb-12">Frequently Asked <span className="text-primary">Questions</span></h2>
+        <div className="container-custom mx-auto max-w-4xl">
+          <h2 className="heading-lg mb-12 text-center">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
 
           <div className="space-y-6">
-            <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">How far in advance should I book Chef Salang for catering?</h3>
+            <div className="rounded-lg bg-card p-6">
+              <h3 className="mb-2 text-xl font-semibold">
+                How far in advance should I book Chef Salang for catering?
+              </h3>
               <p className="text-muted-foreground">
-                For events like weddings and large corporate functions, we recommend booking at least 2-3 months in advance.
-                For smaller gatherings, 2-4 weeks' notice is usually sufficient, subject to availability.
+                For events like weddings and large corporate functions, we
+                recommend booking at least 2-3 months in advance. For smaller
+                gatherings, 2-4 weeks' notice is usually sufficient, subject to
+                availability.
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Does Chef Salang cater outside of Nagaland?</h3>
+            <div className="rounded-lg bg-card p-6">
+              <h3 className="mb-2 text-xl font-semibold">
+                Does Chef Salang cater outside of Nagaland?
+              </h3>
               <p className="text-muted-foreground">
-                Yes, Chef Salang is available for events throughout India. Additional travel fees may apply depending on the location.
+                Yes, Chef Salang is available for events throughout India.
+                Additional travel fees may apply depending on the location.
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">How can I order Chef Salang's products?</h3>
+            <div className="rounded-lg bg-card p-6">
+              <h3 className="mb-2 text-xl font-semibold">
+                How can I order Chef Salang's products?
+              </h3>
               <p className="text-muted-foreground">
-                Products can be ordered through our Instagram shop or by sending a direct message on WhatsApp.
-                We currently offer shipping throughout India.
+                Products can be ordered through our Instagram shop or by sending
+                a direct message on WhatsApp. We currently offer shipping
+                throughout India.
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Is Chef Salang available for media appearances and collaborations?</h3>
+            <div className="rounded-lg bg-card p-6">
+              <h3 className="mb-2 text-xl font-semibold">
+                Is Chef Salang available for media appearances and
+                collaborations?
+              </h3>
               <p className="text-muted-foreground">
-                Yes, Chef Salang is available for media appearances, cooking demonstrations, collaborations, and consultancy work.
-                Please contact us with details of your request.
+                Yes, Chef Salang is available for media appearances, cooking
+                demonstrations, collaborations, and consultancy work. Please
+                contact us with details of your request.
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Can Chef Salang accommodate dietary restrictions?</h3>
+            <div className="rounded-lg bg-card p-6">
+              <h3 className="mb-2 text-xl font-semibold">
+                Can Chef Salang accommodate dietary restrictions?
+              </h3>
               <p className="text-muted-foreground">
-                Yes, Chef Salang can accommodate various dietary restrictions and preferences.
-                Please mention any specific requirements during the consultation phase.
+                Yes, Chef Salang can accommodate various dietary restrictions
+                and preferences. Please mention any specific requirements during
+                the consultation phase.
               </p>
             </div>
           </div>
@@ -206,12 +230,13 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="heading-lg text-white mb-6">
+          <h2 className="heading-lg mb-6 text-white">
             Let's Create Something Special Together
           </h2>
-          <p className="text-xl text-white opacity-90 mb-10 max-w-2xl mx-auto">
-            Whether you're planning an event, interested in Chef Salang's products, or have a business proposition,
-            we're excited to hear from you.
+          <p className="mx-auto mb-10 max-w-2xl text-xl text-white opacity-90">
+            Whether you're planning an event, interested in Chef Salang's
+            products, or have a business proposition, we're excited to hear from
+            you.
           </p>
           <a
             href="https://wa.me/+918798769559"
