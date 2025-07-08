@@ -59,28 +59,28 @@ const products = [
     name: "Beef Chilli Pot",
     description:
       "Spicy beef slow-cooked with Naga chillies in a rich pot. A bold dish to spice up your meals.",
-    image: "/images/SpicyBeefLiver.png",
+    image: "/images/Beefchillipot.jpg",
     price: "₹250 /pack",
     category: "Red Meat",
   },
   {
     id: 7,
-    name: "Beef Masala",
+    name: "Spicy Beef Liver",
     description:
-      "Succulent beef simmered in a fragrant Naga masala blend. Pairs wonderfully with rice or flatbreads.",
+      "Succulent beef liver simmered in a fragrant Naga masala blend. Pairs wonderfully with rice or flatbreads.",
     image: "/images/SpicyBeefLiver.png",
     price: "₹220 /pack",
     category: "Red Meat",
   },
-  {
-    id: 8,
-    name: "Mutton Masala",
-    description:
-      "Flavorful mutton in a spicy Naga masala mix. A hearty addition to your traditional meals.",
-    image: "/images/BBQPORK.jpg",
-    price: "₹350 /pack",
-    category: "Red Meat",
-  },
+  // {
+  //   id: 8,
+  //   name: "Mutton Masala",
+  //   description:
+  //     "Flavorful mutton in a spicy Naga masala mix. A hearty addition to your traditional meals.",
+  //   image: "/images/BBQPORK.jpg",
+  //   price: "₹350 /pack",
+  //   category: "Red Meat",
+  // },
 
   // White Meat Products
   {
@@ -97,19 +97,19 @@ const products = [
     name: "Spicy Wings (Raja Spicy)",
     description:
       "Juicy chicken wings coated in a fiery Raja Spicy Naga blend. Great for snacking or parties.",
-    image: "/images/ChickenBBQ.jpg",
+    image: "/images/SpicyWings.jpg",
     price: "₹220 /pack",
     category: "White Meat",
   },
-  {
-    id: 11,
-    name: "Spicy Chicken (Raja Spicy)",
-    description:
-      "Tender chicken infused with Raja Spicy seasoning. A bold dish to spice up your table.",
-    image: "/catering/image06.jpg",
-    price: "₹250 /pack",
-    category: "White Meat",
-  },
+  // {
+  //   id: 11,
+  //   name: "Spicy Chicken (Raja Spicy)",
+  //   description:
+  //     "Tender chicken infused with Raja Spicy seasoning. A bold dish to spice up your table.",
+  //   image: "/catering/image06.jpg",
+  //   price: "₹250 /pack",
+  //   category: "White Meat",
+  // },
   {
     id: 12,
     name: "Whole Chicken Roast (2 kg)",
@@ -133,14 +133,15 @@ const products = [
     name: "Salt & Pepper Chicken",
     description:
       "Crispy chicken tossed with salt, pepper, and a hint of Naga spices. A simple yet tasty dish.",
-    image: "/images/ChickenBBQ.jpg",
+    image: "/catering/image01.jpg",
     price: "₹250 /pack",
     category: "White Meat",
   },
   {
     id: 15,
     name: " Chicken Kimbap",
-    description:"Korean-style rice rolls filled with seasoned chicken and vegetables, wrapped in seaweed with a Naga spice twist.",
+    description:
+      "Korean-style rice rolls filled with seasoned chicken and vegetables, wrapped in seaweed with a Naga spice twist.",
     image: "/images/Chicken_kimbap_.jpg",
     price: "₹250 /pack",
     category: "White Meat",
@@ -163,10 +164,10 @@ const products = [
   // },
   {
     id: 18,
-    name: "Mughlai Chicken",
+    name: "Beef Mughlai ",
     description:
-      "Tender chicken in a rich Mughlai gravy with a Naga twist. A royal treat for your meals.",
-    image: "/images/Chicken_Roast.jpg",
+      "Tender Beef in a rich Mughlai gravy with a Naga twist. A royal treat for your meals.",
+    image: "/images/BeefMughlai.jpg",
     price: "₹250 /pack",
     category: "White Meat",
   },
@@ -175,7 +176,7 @@ const products = [
     name: "Tandoori Chicken",
     description:
       "Classic tandoori chicken marinated with Naga spices for a smoky, spicy flavor. A must-try dish.",
-    image: "/images/ChickenBBQ.jpg",
+    image: "/images/TandooriChicken.jpg",
     price: "₹700 /pack",
     category: "White Meat",
   },
@@ -192,46 +193,46 @@ const products = [
   // Sea Food Products
   {
     id: 21,
-    name: "Stir Fry Prawns",
-    description:
-      "Juicy prawns stir-fried with Naga spices for a bold, flavorful kick. Perfect with rice or as a starter.",
-    image: "/images/Tempura_prawns.jpg",
-    price: "₹350 /pack",
+
+    name: "Ango Ro",
+    description:"Whole deep-fried fish, crispy on the outside and tender inside, served with a light lemony broth and fiery Naga-style chili dip.",
+     image: "/images/fried-fish.jpg",
+    price: "₹800 /pack",
     category: "Sea Food",
   },
-  {
-    id: 22,
-    name: "Tempura Prawns",
-    description:
-      "Crispy prawns in a light tempura batter with a hint of Naga seasoning. A delightful appetizer or snack.",
-    image: "/catering/image03.jpg",
-    price: "₹350 /pack",
-    category: "Sea Food",
-  },
-  {
-    id: 23,
-    name: "Chilli Garlic Prawns",
-    description:
-      "Succulent prawns tossed in a spicy chilli garlic sauce with Naga aromatics. Great for seafood lovers.",
-    image: "/images/Tempura_prawns.jpg",
-    price: "₹350 /pack",
-    category: "Sea Food",
-  },
-  {
-    id: 24,
-    name: "Fish Tempura (Basa)",
-    description:
-      "Tender basa fish in a crispy tempura batter, lightly seasoned with Naga spices. Perfect for a light meal.",
-    image: "/images/fried-fish.jpg",
-    price: "₹300 /pack",
-    category: "Sea Food",
-  },
+  // {
+  //   id: 22,
+  //   name: "Tempura Prawns",
+  //   description:
+  //     "Crispy prawns in a light tempura batter with a hint of Naga seasoning. A delightful appetizer or snack.",
+  //   image: "/catering/image03.jpg",
+  //   price: "₹350 /pack",
+  //   category: "Sea Food",
+  // },
+  // {
+  //   id: 23,
+  //   name: "Chilli Garlic Prawns",
+  //   description:
+  //     "Succulent prawns tossed in a spicy chilli garlic sauce with Naga aromatics. Great for seafood lovers.",
+  //   image: "/images/Tempura_prawns.jpg",
+  //   price: "₹350 /pack",
+  //   category: "Sea Food",
+  // },
+  // {
+  //   id: 24,
+  //   name: "Fish Tempura (Basa)",
+  //   description:
+  //     "Tender basa fish in a crispy tempura batter, lightly seasoned with Naga spices. Perfect for a light meal.",
+  //   image: "/images/fried-fish.jpg",
+  //   price: "₹300 /pack",
+  //   category: "Sea Food",
+  // },
   {
     id: 25,
     name: "Whole Fish & Chips",
     description:
       "A classic whole fish fried to perfection with chips, infused with Naga flavors. Ideal for a hearty meal.",
-    image: "/images/fried-fish.jpg",
+    image: "/images/Fish&chips.jpg",
     price: "₹600 /pack",
     category: "Sea Food",
   },
@@ -249,7 +250,7 @@ const products = [
     name: "Whole Steamed Fish",
     description:
       "Fresh whole fish steamed with Naga herbs and spices. A healthy and flavorful seafood option.",
-    image: "/images/fried-fish.jpg",
+    image: "/images/Steamfish.jpg",
     price: "₹600 /pack",
     category: "Sea Food",
   },
@@ -258,7 +259,7 @@ const products = [
     name: "Fish Nugget Masala (Pankaj Fish)",
     description:
       "Pankaj fish nuggets coated in a spicy Naga masala blend. Perfect as a snack or side dish.",
-    image: "/images/fried-fish.jpg",
+    image: "/images/Fishnuggetsmasala.jpg",
     price: "₹250 /pack",
     category: "Sea Food",
   },
@@ -300,15 +301,15 @@ const products = [
     price: "₹600 /pack",
     category: "Hampers",
   },
-  {
-    id: 33,
-    name: "Fish n' Chips Hamper",
-    description:
-      "Classic fish and chips combination with Naga spices, perfect for a complete meal.",
-    image: "/images/Fish_n_chips_hamper.jpg",
-    price: "₹500 /pack",
-    category: "Hampers",
-  },
+  // {
+  //   id: 33,
+  //   name: "Fish n' Chips Hamper",
+  //   description:
+  //     "Classic fish and chips combination with Naga spices, perfect for a complete meal.",
+  //   image: "/images/Fish_n_chips_hamper.jpg",
+  //   price: "₹500 /pack",
+  //   category: "Hampers",
+  // },
   {
     id: 34,
     name: "Snack Box",

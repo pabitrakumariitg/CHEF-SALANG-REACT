@@ -197,17 +197,19 @@ export default function AboutPage() {
                     'Completed formal culinary training with specialization in pan-Asian and Continental cusines',
                 },
                 {
-                  year: '2014',
+                  year: '2015',
                   title: 'Naga Chef Victory',
                   description:
                     'Won Season 3 of the Naga Chef competition with his signature dish featuring LANG LANG Chicken and Last Taste (Sweet Potato Pudding)',
                 },
-                {
-                  year: '2015',
-                  title: 'Hornbill Festival Feature',
-                  description:
-                    'I won the Naga chef in 2015 Hornbill Festival',
-                },
+
+                // {
+                //   year: '2015',
+                //   title: 'Hornbill Festival Feature',
+                //   description:
+                //     'I won the Naga chef in 2015 Hornbill Festival',
+                // }
+                ,
                 {
                   year: '2017',
                   title: 'Catering Business Launch',
