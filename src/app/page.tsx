@@ -10,7 +10,7 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/detailing.jpg"
+            src="/images/banner.jpg"
             alt="Chef Salang cooking traditional Naga food"
             fill
             priority
