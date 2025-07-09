@@ -45,15 +45,15 @@ const products = [
     price: "₹350 /pack",
     category: "Red Meat",
   },
-  {
-    id: 5,
-    name: "Pork in Black Bean",
-    description:
-      "Tender pork cooked in a rich black bean sauce with Naga aromatics. A savory delight for any dish.",
-    image: "/images/Crispy pork 2.JPG",
-    price: "₹220 /pack",
-    category: "Red Meat",
-  },
+  // {
+  //   id: 5,
+  //   name: "Pork in Black Bean",
+  //   description:
+  //     "Tender pork cooked in a rich black bean sauce with Naga aromatics. A savory delight for any dish.",
+  //   image: "/images/Crispy pork 2.JPG",
+  //   price: "₹220 /pack",
+  //   category: "Red Meat",
+  // },
   {
     id: 6,
     name: "Beef Chilli Pot",
@@ -236,15 +236,15 @@ const products = [
     price: "₹600 /pack",
     category: "Sea Food",
   },
-  {
-    id: 26,
-    name: "Sichuan Shrimp",
-    description:
-      "Shrimp cooked in a spicy Sichuan sauce with a Naga twist. A fiery dish to elevate your meal.",
-    image: "/images/Tempura_prawns.jpg",
-    price: "₹250 /pack",
-    category: "Sea Food",
-  },
+  // {
+  //   id: 26,
+  //   name: "Sichuan Shrimp",
+  //   description:
+  //     "Shrimp cooked in a spicy Sichuan sauce with a Naga twist. A fiery dish to elevate your meal.",
+  //   image: "/images/Tempura_prawns.jpg",
+  //   price: "₹250 /pack",
+  //   category: "Sea Food",
+  // },
   {
     id: 27,
     name: "Whole Steamed Fish",
