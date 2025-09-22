@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, UtensilsCrossed, ChefHat, Gift, PlayCircle, PhoneCall } from 'lucide-react';
+import RecipePage from './recipe/page';
 
 export default function HomePage() {
   return (
@@ -134,47 +135,49 @@ export default function HomePage() {
               <p className="text-muted-foreground">Get in touch for collaborations and inquiries</p>
             </Link>
           </div>
+          <RecipePage />
+          <section className="section-padding ">
+            <div className="container-custom">
+              <h2 className="heading-lg font-bold text-center mb-6">
+                Signature <span className="text-primary">Dishes</span>
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                {/* Dish 1 */}
+                <div className="flex flex-col items-center">
+                  <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
+                    <Image
+                      src="/images/Lang-CHICKEN.jpg"
+                      alt="Lang Lang Chicken"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <p className="mt-4 text-center text-secondary font-semibold text-lg">Lang Lang Chicken</p>
+                </div>
+
+                {/* Dish 2 */}
+                <div className="flex flex-col items-center">
+                  <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
+                    <Image
+                      src="/images/PorkRoast.jpg"
+                      alt="Porkshe - Deep-Fried Pork"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <p className="mt-4 text-center text-secondary font-semibold text-lg">Pork Roast </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
 
       {/* Signature dishes */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <h2 className="heading-lg font-bold text-center mb-6">
-            Signature <span className="text-primary">Dishes</span>
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-            {/* Dish 1 */}
-            <div className="flex flex-col items-center">
-              <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
-                <Image
-                  src="/images/Lang-CHICKEN.jpg"
-                  alt="Lang Lang Chicken"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <p className="mt-4 text-center text-secondary font-semibold text-lg">Lang Lang Chicken</p>
-            </div>
-
-            {/* Dish 2 */}
-            <div className="flex flex-col items-center">
-              <div className="relative h-[400px] md:h-[600px] w-full rounded-lg overflow-hidden card-hover">
-                <Image
-                  src="/images/PorkRoast.jpg"
-                  alt="Porkshe - Deep-Fried Pork"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <p className="mt-4 text-center text-secondary font-semibold text-lg">Pork Roast </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
 
