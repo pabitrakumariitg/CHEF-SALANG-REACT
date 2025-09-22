@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, UtensilsCrossed, ChefHat, Gift, PlayCircle, PhoneCall } from 'lucide-react';
+import { ArrowRight, UtensilsCrossed, ChefHat, Gift, PlayCircle, PhoneCall, HomeIcon } from 'lucide-react';
 import RecipePage from './recipe/page';
+import HomepageRecipe from '@/components/HomepageRecipe';
 
 export default function HomePage() {
   return (
@@ -84,11 +85,11 @@ export default function HomePage() {
             Explore <span className="text-primary">Chef Salang's</span> World
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols lg:grid-cols-6 gap-8">
             {/* Signature Dishes */}
             <Link
               href="/gallery"
-              className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
+              className="bg-card p-4 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <UtensilsCrossed className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Signature Dishes</h3>
@@ -98,7 +99,7 @@ export default function HomePage() {
             {/* Catering */}
             <Link
               href="/catering"
-              className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
+              className="bg-card p-4 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <ChefHat className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Catering</h3>
@@ -108,17 +109,26 @@ export default function HomePage() {
             {/* Products */}
             <Link
               href="/products"
-              className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
+              className="bg-card p-4 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <Gift className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Products</h3>
               <p className="text-muted-foreground">Artisanal Naga products for your kitchen</p>
             </Link>
+            {/* Recipe */}
+            <Link
+              href="/recipe"
+              className="bg-card p-4 rounded-lg flex flex-col items-center text-center card-hover"
+            >
+              <Gift className="w-10 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Recipes</h3>
+              <p className="text-muted-foreground">Explore authentic Naga recipes</p>
+            </Link>
 
             {/* Videos */}
             <Link
               href="/videos"
-              className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
+              className="bg-card p-4 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <PlayCircle className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Videos</h3>
@@ -128,14 +138,15 @@ export default function HomePage() {
             {/* Contact */}
             <Link
               href="/contact"
-              className="bg-card p-8 rounded-lg flex flex-col items-center text-center card-hover"
+              className="bg-card p-4 rounded-lg flex flex-col items-center text-center card-hover"
             >
               <PhoneCall className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">Contact</h3>
               <p className="text-muted-foreground">Get in touch for collaborations and inquiries</p>
             </Link>
           </div>
-          <RecipePage />
+          <HomepageRecipe />
+
           <section className="section-padding ">
             <div className="container-custom">
               <h2 className="heading-lg font-bold text-center mb-6">

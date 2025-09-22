@@ -8,31 +8,31 @@ export const metadata = {
 };
 
 const recipes = [
-    {
-        id: 1,
-        name: "Smoked Pork in Axone",
-        category: "Main Course",
-        cookingTime: "1 hrs 20 min",
-        serves: "3-4",
+    // {
+    //     id: 1,
+    //     name: "Smoked Pork in Axone",
+    //     category: "Main Course",
+    //     cookingTime: "1 hrs 20 min",
+    //     serves: "3-4",
 
-        image: "/images/recipe1.jpg",
-        description: "A traditional Naga delicacy featuring tender smoked pork cooked with fermented soybeans (axone), creating a rich umami flavor profile.",
-        ingredients: [
-            "Smoked Pork: 500 gms",
-            "Fermented Soybean (axone): 50 gms",
-            "Dried Red Chilli: 10 pieces",
-            "Tomato: 3 pieces",
-            "Salt to Taste"
-        ],
-        methods: [
-            "Cook the Fermented Soy Bean in a pot with water for about 1 to 2 hours",
-            "Now add the remaining ingredients i.e., smoked pork, dried red chilli and tomato",
-            "Cook until the meat is tender",
-            "Grind the tomato and red chilli",
-            "Mix all the ingredients and bring it to boil for about 1 to 2 minutes and ready to serve"
-        ], 
-        instagramLink: "https://www.instagram.com/p/DM-LqCqJW2L/?img_index=1"
-    },
+    //     image: "/images/recipe1.jpg",
+    //     description: "A traditional Naga delicacy featuring tender smoked pork cooked with fermented soybeans (axone), creating a rich umami flavor profile.",
+    //     ingredients: [
+    //         "Smoked Pork: 500 gms",
+    //         "Fermented Soybean (axone): 50 gms",
+    //         "Dried Red Chilli: 10 pieces",
+    //         "Tomato: 3 pieces",
+    //         "Salt to Taste"
+    //     ],
+    //     methods: [
+    //         "Cook the Fermented Soy Bean in a pot with water for about 1 to 2 hours",
+    //         "Now add the remaining ingredients i.e., smoked pork, dried red chilli and tomato",
+    //         "Cook until the meat is tender",
+    //         "Grind the tomato and red chilli",
+    //         "Mix all the ingredients and bring it to boil for about 1 to 2 minutes and ready to serve"
+    //     ], 
+    //     instagramLink: "https://www.instagram.com/p/DM-LqCqJW2L/?img_index=1"
+    // },
     {
         id: 2,
         name: "Naga Chicken with Cherry Tomatoes",
@@ -58,65 +58,65 @@ const recipes = [
             "Fry the marinated chicken in a pan in less oil with covered lid for 1hr 30 min basting every 20 minutes",
             "Heat oil in a pan and add the whole cherry tomatoes and Alu Lasüng, and fry (sauté)",
             "Now, add the whole chicken and continue to fry about 5 minutes in low flames with covered lid. Garnish with mejanga seeds powder and its ready to serve"
-        ], 
+        ],
         instagramLink: "https://www.instagram.com/reel/DMKOC66pH6p/?igsh=ZDF2bnNzMmdmNnYy"
     },
-    {
-        id: 3,
-        name: "Beans Family",
-        category: "Vegetarian",
-        cookingTime: "25-30 mins",
-        serves: "2-3",
+    // {
+    //     id: 3,
+    //     name: "Beans Family",
+    //     category: "Vegetarian",
+    //     cookingTime: "25-30 mins",
+    //     serves: "2-3",
 
-        image: "/images/recipe3.jpg",
-        description: "A nutritious variety of beans cooked in dry bamboo shoot, showcasing the diverse flavors of Naga vegetarian cuisine.",
-        ingredients: [
-            "Kidney Beans: 50 gms",
-            "Runner beans: 50 gms",
-            "Black eyed beans: 50 gms",
-            "Dry bamboo shoot: 10 gms",
-            "Spring onion for garnish",
-            "Salt to Taste"
-        ],
-        methods: [
-            "Soak black eyed beans and kidney beans overnight (dried one)",
-            "Take a cooking pot, cook kidney beans, black eyed beans with dry bamboo shoot until the beans are soft",
-            "Add runner beans and cook for a minute. Serve garnish with spring onion"
-        ], 
-        instagramLink: "https://www.instagram.com/p/DOa5p5tCQCE/?img_index=1"
-    },
-    {
-        id: 4,
-        name: "Black & White (Grilled Chicken with stuffed nüoshi paste)",
-        category: "Main Course",
-        cookingTime: "25 min",
-        serves: "4-5",
+    //     image: "/images/recipe3.jpg",
+    //     description: "A nutritious variety of beans cooked in dry bamboo shoot, showcasing the diverse flavors of Naga vegetarian cuisine.",
+    //     ingredients: [
+    //         "Kidney Beans: 50 gms",
+    //         "Runner beans: 50 gms",
+    //         "Black eyed beans: 50 gms",
+    //         "Dry bamboo shoot: 10 gms",
+    //         "Spring onion for garnish",
+    //         "Salt to Taste"
+    //     ],
+    //     methods: [
+    //         "Soak black eyed beans and kidney beans overnight (dried one)",
+    //         "Take a cooking pot, cook kidney beans, black eyed beans with dry bamboo shoot until the beans are soft",
+    //         "Add runner beans and cook for a minute. Serve garnish with spring onion"
+    //     ], 
+    //     instagramLink: "https://www.instagram.com/p/DOa5p5tCQCE/?img_index=1"
+    // },
+    // {
+    //     id: 4,
+    //     name: "Black & White (Grilled Chicken with stuffed nüoshi paste)",
+    //     category: "Main Course",
+    //     cookingTime: "25 min",
+    //     serves: "4-5",
 
-        image: "/images/recipe4.png",
-        description: "Juicy chicken breast butterflied and stuffed with a flavorful nüoshi paste, then grilled to perfection for a smoky and spicy treat.",
-        ingredients: [
-            "Chicken breast: 1kg",
-            "Nüoshi: 2 pieces",
-            "Red Chilli: 5 pieces",
-            "Tomato: 1 piece",
-            "Garlic: 10 cloves",
-            "Salt to taste"
-        ],
-        methods: [
-            "Cook nüoshi with red chilli, tomato and salt and grind. Marinate the chicken with garlic and salt for 10 mins and keep aside",
-            "Butterfly each breast by slicing in half horizontally through the centre, cutting almost but not completely through. Now stuff the chicken with nüoshi paste",
-            "Grill the chicken breast for 10 mins on each side"
-        ], 
-        instagramLink: "https://www.instagram.com/p/DMcsJlypM2O/"
-    }
+    //     image: "/images/recipe4.png",
+    //     description: "Juicy chicken breast butterflied and stuffed with a flavorful nüoshi paste, then grilled to perfection for a smoky and spicy treat.",
+    //     ingredients: [
+    //         "Chicken breast: 1kg",
+    //         "Nüoshi: 2 pieces",
+    //         "Red Chilli: 5 pieces",
+    //         "Tomato: 1 piece",
+    //         "Garlic: 10 cloves",
+    //         "Salt to taste"
+    //     ],
+    //     methods: [
+    //         "Cook nüoshi with red chilli, tomato and salt and grind. Marinate the chicken with garlic and salt for 10 mins and keep aside",
+    //         "Butterfly each breast by slicing in half horizontally through the centre, cutting almost but not completely through. Now stuff the chicken with nüoshi paste",
+    //         "Grill the chicken breast for 10 mins on each side"
+    //     ], 
+    //     instagramLink: "https://www.instagram.com/p/DMcsJlypM2O/"
+    // }
 ];
 
 
-export default function RecipePage() {
+export default function HomepageRecipe() {
     return (
         <div className="pt-24">
             {/* Hero Section */}
-            <section className="section-padding bg-card">
+            {/* <section className="section-padding bg-card">
                 <div className="container-custom text-center">
                     <h1 className="heading-xl mb-6">
                         Traditional <span className="text-primary">Naga Recipes</span>
@@ -125,7 +125,7 @@ export default function RecipePage() {
                         Discover Chef Salang's authentic Naga recipes, passed down through generations and perfected with traditional cooking methods
                     </p>
                 </div>
-            </section>
+            </section> */}
 
             {/* Recipes Section */}
             <section className="section-padding bg-background">
@@ -235,9 +235,20 @@ export default function RecipePage() {
                     </div>
                 </div>
             </section>
+            <div className="flex justify-center">
+                <a
+                    href="/recipe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-700 text-white px-4 py-2 rounded-full  font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300"
+                >
+                  
+                View more Recipes
+                </a>
+            </div>
 
             {/* Instagram Section */}
-            <section className="section-padding bg-card">
+            {/* <section className="section-padding bg-card">
                 <div className="container-custom text-center">
                     <div className="mb-6 flex items-center justify-center">
                         <Instagram className="mr-3 h-8 w-8 text-primary" />
@@ -256,7 +267,7 @@ export default function RecipePage() {
                         <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                 </div>
-            </section>
+            </section> */}
 
             {/* Cooking Classes */}
             {/* <section className="section-padding bg-primary">
