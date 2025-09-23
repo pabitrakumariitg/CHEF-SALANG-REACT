@@ -1,10 +1,11 @@
 import "@/styles/globals.css";
 import React from "react";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -56,6 +57,21 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CE2Q8DR6QH"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CE2Q8DR6QH');
+          `}
+        </Script>
+      </head>
       <body className="flex min-h-screen flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
